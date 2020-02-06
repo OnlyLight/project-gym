@@ -1,1 +1,1 @@
-"use strict";
+"use strict";require("./jquery.min");
