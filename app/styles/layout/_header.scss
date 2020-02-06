@@ -1,0 +1,83 @@
+.nav {
+  padding-top: 20px;
+  color: $color-white;
+  background-color: $color-black;
+
+  &__switcher {
+    @include flex(row, flex-end, center);
+    margin-bottom: 2px;
+  }
+
+  &__content {
+    @include flex(row, space-between, center);
+  }
+
+  &__lang {
+    @include button(transparent, $color-white);
+    font-family: $font-base;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    font-style: italic;
+    text-transform: uppercase;
+
+    &:first-child {
+      &::after {
+        content: "|";
+        @include size(1px, 12px);
+        font-style: normal;
+        margin: 0 10px;
+        // width: ;
+      }
+    }
+  }
+
+  &__list {
+    @include flex(row, center, center);
+    flex: 1;
+    list-style-type: none;
+    margin-bottom: 0;
+
+    &-item {
+      font-family: $font-base;
+      font-size: $font-size-medium;
+      font-weight: $font-weight-medium;
+      font-style: italic;
+      text-transform: capitalize;
+      margin-right: 31px;
+      transition: all 0.4s linear;
+
+      &:hover {
+        color: $color-orange-1;
+      }
+
+      &.active {
+        color: $color-orange-1;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__login {
+    @include flex(row, null, center);
+    @include button(transparent, $color-white);
+    margin-right: 25px;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-left: 8px;
+    font-family: $font-base;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  &__menu {
+    @include button(transparent, $color-white);
+    @include size(51px, 45px);
+  }
+}
