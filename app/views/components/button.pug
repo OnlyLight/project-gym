@@ -1,0 +1,6 @@
+mixin button(className, name, icon)
+  button.button(class=className)
+    span.button__text= name
+    if icon
+      i.button__icon(class=icon)
+    

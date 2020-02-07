@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 45px;
+  color: $color-white;
+  font-family: $font-base;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+  font-style: italic;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: $color-orange-1;
+  transition: all 0.4s linear;
+
+  &:hover {
+    background-color: $color-orange-2;
+  }
+
+  &__icon {
+    margin-left: 5px;
+  }
+}

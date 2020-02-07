@@ -128,6 +128,12 @@ table {
   border-spacing: 0;
 }
 
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 button {
   padding: 0;
   border: 0;
