@@ -1,3 +1,11 @@
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+@import "node_modules/bootstrap/scss/bootstrap-reboot";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+
+@import "reset";
+
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
@@ -9,10 +17,13 @@
 @import "layout/header";
 @import "layout/footer";
 
-
 @import "components/button";
+@import "components/facility";
+@import "components/workout";
+@import "components/promotion";
+@import "components/quality";
+@import "components/fee";
 
 @import "vendors/fontawesome";
 
-
-
+@import "pages/home";
