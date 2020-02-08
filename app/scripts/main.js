@@ -44,6 +44,15 @@ $(document).ready(function() {
     dots: true,
     focusOnSelect: false,
     focusOnChange: false,
-    centerMode: false
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 });

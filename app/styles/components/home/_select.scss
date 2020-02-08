@@ -36,6 +36,10 @@
     border: 1px solid $color-blue-1;
     border-radius: 4px;
 
+    @include maxWidth(575.98px) {
+      width: 80%;
+    }
+
     &__title {
       display: flex;
       justify-content: space-between;
