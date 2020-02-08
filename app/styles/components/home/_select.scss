@@ -12,14 +12,14 @@
     color: $color-green-1;
     font-size: 34px;
     font-weight: $font-weight-boldest;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   &__parap {
     color: $color-grey-light-2;
     font-size: 30px;
     font-weight: $font-weight-medium;
-    margin-bottom: 29px;
+    margin-bottom: 12px;
   }
 
   .dropdown {
@@ -35,6 +35,10 @@
     opacity: 0.8;
     border: 1px solid $color-blue-1;
     border-radius: 4px;
+
+    @include media-breakpoint-down(xs) {
+      width: 90%;
+    }
 
     &__title {
       display: flex;

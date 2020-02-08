@@ -34,15 +34,27 @@
         }
         &:first-child {
           font-size: 60px;
+
+          @media (max-width: 1368px) {
+            font-size: 50px;
+          }
         }
 
         &:nth-child(2) {
           font-size: 70px;
+
+          @media (max-width: 1368px) {
+            font-size: 55px;
+          }
         }
 
         &:last-child {
           font-size: 92px;
           font-weight: $font-weight-boldest;
+
+          @media (max-width: 1368px) {
+            font-size: 75px;
+          }
         }
       }
     }
@@ -148,6 +160,10 @@
       padding-top: 20px;
       margin-bottom: 0;
 
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
       &-item {
         &:last-child {
           margin-right: 0;
@@ -199,6 +215,20 @@
       @include button(transparent, $color-white);
       @include size(51px, 45px);
       margin-top: 14px;
+    }
+
+    &__logo {
+      @media (min-width: 1000px) and (max-width: 1500px) {
+        margin-left: 100px;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-left: 72px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+      }
     }
   }
 

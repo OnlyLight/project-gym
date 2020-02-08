@@ -76,6 +76,10 @@
     @include media-breakpoint-down(lg) {
       width: 20%;
     }
+
+    @include media-breakpoint-down(xs) {
+      left: 10px;
+    }
   }
 
   &__rectangle {
