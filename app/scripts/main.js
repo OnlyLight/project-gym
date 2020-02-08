@@ -4,7 +4,25 @@ $(document).ready(function() {
     slidesToScroll: 2,
     arrows: false,
     dots: true,
-    dotsClass: "secsion-result__dots"
+    dotsClass: "secsion-result__dots",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
   });
 
   var prevArr =
