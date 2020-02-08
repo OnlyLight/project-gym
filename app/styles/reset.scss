@@ -140,6 +140,17 @@ button {
   }
 }
 
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+div,
+input:focus {
+  outline: 0;
+}
+
 img {
   vertical-align: middle;
   max-width: 100%;

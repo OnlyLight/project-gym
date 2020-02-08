@@ -11,11 +11,512 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:100,300,300i,400,400i,500,500i,600,800i,900i&amp;display=swap&amp;subset=vietnamese">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2&amp;display=swap">
   </head>
   <body class="home-page">
     <div class="wrapper">
+      <div class="header">
+        <div class="header__slider slider">
+          <div class="slider__item"><img class="slider__img" src="images/bg-slider.png" alt="#">
+            <div class="slider__content">
+              <h3 class="slider__heading">
+                <p class="slider__heading-line">open 24/7</p>
+                <p class="slider__heading-line">300k/ month</p>
+                <p class="slider__heading-line">no <span class="slider__heading-line--green">contract</span></p>
+              </h3>
+              <div class="slider__button-group">
+                      <button class="button slider__button slider__button--larger"><span class="button__text">register trail</span><i class="button__icon fa fa-angle-double-right"></i>
+                      </button>
+                      <button class="button slider__button"><span class="button__text">join now</span>
+                      </button>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item"><img class="slider__img" src="images/bg-slider.png" alt="#">
+          </div>
+          <div class="slider__item"><img class="slider__img" src="images/bg-slider.png" alt="#">
+          </div>
+          <div class="slider__item"><img class="slider__img" src="images/bg-slider.png" alt="#">
+          </div>
+          <div class="slider__item"><img class="slider__img" src="images/bg-slider.png" alt="#">
+          </div>
+          <div class="slider__item"><img class="slider__img" src="images/bg-slider.png" alt="#">
+          </div>
+        </div>
+        <div class="header__nav nav">
+          <div class="nav__switcher container">
+            <button class="nav__lang active"><span>en</span></button>
+            <button class="nav__lang"><span>vn</span></button>
+          </div>
+          <div class="container nav__content"><img class="nav__logo" src="images/logo.png">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a class="nav__list-link" href="javascript:void(0)">join now</a>
+              </li>
+              <li class="nav__list-item"><a class="nav__list-link active" href="javascript:void(0)">find a gym</a>
+              </li>
+              <li class="nav__list-item"><a class="nav__list-link" href="javascript:void(0)">forgot pin</a>
+              </li>
+              <li class="nav__list-item"><a class="nav__list-link" href="javascript:void(0)">carrers</a>
+              </li>
+              <li class="nav__list-item"><a class="nav__list-link" href="javascript:void(0)">member login</a>
+              </li>
+            </ul>
+            <button class="nav__login"><img class="nav__icon" src="images/icon-user.png"><span class="nav__button">login</span></button>
+            <button class="nav__menu js-menu"><img class="nav__icon" src="images/icon-menu.png"></button>
+          </div>
+        </div>
+        <div class="header__menu menu">
+          <button class="menu__close js-close-menu"><i class="fas fa-times"></i></button>
+          <ul class="menu__list">
+            <li class="menu__list-item active"><a class="menu__list-link" href="javascript:void(0)">home</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Memberships options</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Group X & Yoga Classes</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Equipment</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Personal Trainer</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Help Centre</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Term & Conditions</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Contact Us</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Property Information</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Work with Us</a>
+            </li>
+            <li class="menu__list-item"><a class="menu__list-link" href="javascript:void(0)">Corporate Membership</a>
+            </li>
+          </ul>
+                <button class="button menu__join"><span class="button__text">join now</span>
+                </button>
+        </div>
+      </div>
+      <section class="section-select">
+        <h3 class="section-select__heading">gym room</h3>
+        <p class="section-select__parap">let's get started</p>
+        <div class="section-select__dropdown dropdown">
+          <p class="dropdown__title js-dropdown">Vui lòng chọn Club<i class="fas fa-angle-down dropdown__icon"></i></p>
+          <ul class="dropdown__list">
+            <li class="dropdown__item">Da Nang</li>
+            <li class="dropdown__item">Quang Nam</li>
+            <li class="dropdown__item">Ho chi minh</li>
+          </ul>
+        </div>
+      </section>
+      <div class="section-quality">
+        <div class="container">
+          <div class="section-quality__tab">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a class="section-quality__tab nav-link active" data-toggle="pill" href="#home">Monthly</a></li>
+              <li class="nav-item"><a class="section-quality__tab nav-link" data-toggle="pill" href="#menu1">Fixed term</a></li>
+              <li class="nav-item"><a class="section-quality__tab nav-link" data-toggle="pill" href="#menu2">Day pass</a></li>
+            </ul>
+            <!-- Tab panes-->
+            <div class="tab-content">
+              <div class="tab-pane container active" id="home">
+                <div class="section-fee">
+                  <div class="section-fee__monthly row" id="js-monthly">
+                    <div class="section-fee__three col-4">
+                      <div class="card-fee">
+                        <p class="card-fee__title">3 month</p>
+                        <div class="card-fee__icon"><i class="fa fa-shower"></i><i class="fa fa-address-book"></i><i class="fa fa-wifi"></i><i class="fa fa-bolt"></i><i class="fa fa-shower"></i></div>
+                        <div class="card-fee__des">
+                          <div class="card-fee__des__title">Package of 03 months</div>
+                          <div class="card-fee__des__item">
+                            <div class="card-fee__des__text">Cost</div>
+                            <p class="card-fee__des__number">1.900.000đ</p>
+                          </div>
+                          <div class="card-fee__des__item">No additional joining free</div>
+                          <div class="card-fee__des__item">Convenient one time payment</div>
+                        </div>
+                        <button class="card-fee__btn"><span>Chose</span><i class="fa fa-check" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                    <div class="section-fee__six col-4">
+                      <div class="card-fee">
+                        <p class="card-fee__title">3 month</p>
+                        <div class="card-fee__icon"><i class="fa fa-shower"></i><i class="fa fa-address-book"></i><i class="fa fa-wifi"></i><i class="fa fa-bolt"></i><i class="fa fa-shower"></i></div>
+                        <div class="card-fee__des">
+                          <div class="card-fee__des__title">Package of 03 months</div>
+                          <div class="card-fee__des__item">
+                            <div class="card-fee__des__text">Cost</div>
+                            <p class="card-fee__des__number">1.900.000đ</p>
+                          </div>
+                          <div class="card-fee__des__item">No additional joining free</div>
+                          <div class="card-fee__des__item">Convenient one time payment</div>
+                        </div>
+                        <button class="card-fee__btn"><span>Chose</span><i class="fa fa-check" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                    <div class="section-fee__twele col-4">
+                      <div class="card-fee">
+                        <p class="card-fee__title">3 month</p>
+                        <div class="card-fee__icon"><i class="fa fa-shower"></i><i class="fa fa-address-book"></i><i class="fa fa-wifi"></i><i class="fa fa-bolt"></i><i class="fa fa-shower"></i></div>
+                        <div class="card-fee__des">
+                          <div class="card-fee__des__title">Package of 03 months</div>
+                          <div class="card-fee__des__item">
+                            <div class="card-fee__des__text">Cost</div>
+                            <p class="card-fee__des__number">1.900.000đ</p>
+                          </div>
+                          <div class="card-fee__des__item">No additional joining free</div>
+                          <div class="card-fee__des__item">Convenient one time payment</div>
+                        </div>
+                        <button class="card-fee__btn"><span>Chose</span><i class="fa fa-check" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane container fade" id="menu1">2</div>
+              <div class="tab-pane container fade" id="menu2">3</div>
+            </div>
+          </div>
+          <div class="section-quality__title">
+            <h3>Range of high quality equipments</h3>
+          </div>
+          <div class="section-quality__slide">
+            <div class="section-quality__item">
+              <div class="row">
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-1.png" alt=""></div>
+                </div>
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-2.png" alt=""></div>
+                </div>
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-3.png" alt=""></div>
+                </div>
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-4.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="section-quality__item">
+              <div class="row">
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-1.png" alt=""></div>
+                </div>
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-2.png" alt=""></div>
+                </div>
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-3.png" alt=""></div>
+                </div>
+                <div class="col-lg-3 col-6 section-quality__item-sub">
+                  <div class="section-quality__thumb"><img src="images/slide-4.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="facility">
+        <div class="container">
+          <div class="facility__logo"><img src="images/new-gym-facility-logo.png" alt=""></div>
+          <div class="facility__title">
+            <h3>facility</h3><span>Opening hours: 24 hours/ 7 days a week</span>
+          </div>
+          <div class="facility__body">
+            <div class="facility__list">
+              <div class="facility__item"><i class="fas fa-parking"></i><span class="facility__text">Free parking lot</span></div>
+              <div class="facility__item"><i class="fas fa-shower"></i><span class="facility__text">Free hot/cold shower</span></div>
+              <div class="facility__item facility__last"><i class="fas fa-dumbbell"></i><span class="facility__text">Free Water</span></div>
+              <div class="facility__item facility__last"><i class="fas fa-wifi"></i><span class="facility__text">Air-con available</span></div>
+            </div>
+            <div class="facility__list">
+              <div class="facility__item"><i class="fas fa-dumbbell"></i><span class="facility__text">42.5 kilogram dummbbells</span></div>
+              <div class="facility__item"><i class="fas fa-shower"></i><span class="facility__text">100+ classess</span></div>
+              <div class="facility__item facility__last"><i class="fas fa-dumbbell"></i><span class="facility__text">200+ bits of kit</span></div>
+              <div class="facility__item facility__last"><i class="fas fa-wifi"></i><span class="facility__text">Wifi Free</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-promotion">
+        <div class="container">
+          <div class="row">
+            <div class="section-promotion__slide col-12 col-md-6">
+              <div class="section-promotion__slide-wrap">
+                <div class="section-promotion__infomation">
+                  <h3 class="section-promotion__title">PROMOTION</h3><span class="section-promotion__decription">More friends More Fun</span>
+                  <p class="section-promotion__pra">The New Gym believes that all people should have access to the power of fitness. We aim to provide a great value-for-money fitness experience that is affordable and flexible for both novice and athlete….</p>
+                  <button class="section-promotion__button">
+                     VIEW DETAIL<i class="fas fa-angle-double-right"></i></button>
+                </div>
+                <div class="section-promotion__infomation">
+                  <h3 class="section-promotion__title">PROMOTION</h3><span class="section-promotion__decription">More friends More Fun</span>
+                  <p class="section-promotion__pra">The New Gym believes that all people should have access to the power of fitness. We aim to provide a great value-for-money fitness experience that is affordable and flexible for both novice and athlete….</p>
+                  <button class="section-promotion__button">
+                     VIEW DETAIL<i class="fas fa-angle-double-right"></i></button>
+                </div>
+              </div>
+              <div class="section-promotion__arrow"></div>
+            </div>
+            <div class="section-promotion__adv col-12 offset-1 col-md-5"><img class="section-promotion__img-main" src="images/img-adv-promotion.png" alt=""><img class="section-promotion__icon" src="images/icon-newgym.png" alt=""><img class="section-promotion__rectangle" src="images/icon-rectangle.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="secsion-result">
+        <div class="container">
+          <div class="secsion-result__wrap">
+            <div class="secsion-result__top">
+              <p class="secsion-result__title">workout results</p>
+              <p class="secsion-result__different">Before & after</p>
+              <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">26</span></div>
+              <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value"> Lose Fat</span></div>
+            </div>
+            <div class="secsion-result__slide">
+              <div class="secsion-result__slider-wrap js-section-result row">
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmap.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">Before</p>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Body Weight </p>
+                        <p class="item-right__number">58kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Muscle Mass </p>
+                        <p class="item-right__number">16kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Percent Body Fat </p>
+                        <p class="item-right__number">37%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmapafter1.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">After</p>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Body Weight </div>
+                        <p class="item-right__number">53kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Muscle Mass </div>
+                        <p class="item-right__number">17.5kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Percent Body Fat </div>
+                        <p class="item-right__number">33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmap.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">Before</p>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Body Weight </p>
+                        <p class="item-right__number">58kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Muscle Mass </p>
+                        <p class="item-right__number">16kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Percent Body Fat </p>
+                        <p class="item-right__number">37%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmapafter1.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">After</p>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Body Weight </div>
+                        <p class="item-right__number">53kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Muscle Mass </div>
+                        <p class="item-right__number">17.5kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Percent Body Fat </div>
+                        <p class="item-right__number">33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmap.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">Before</p>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Body Weight </p>
+                        <p class="item-right__number">58kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Muscle Mass </p>
+                        <p class="item-right__number">16kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Percent Body Fat </p>
+                        <p class="item-right__number">37%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmapafter1.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">After</p>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Body Weight </div>
+                        <p class="item-right__number">53kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Muscle Mass </div>
+                        <p class="item-right__number">17.5kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Percent Body Fat </div>
+                        <p class="item-right__number">33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmap.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">Before</p>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Body Weight </p>
+                        <p class="item-right__number">58kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Muscle Mass </p>
+                        <p class="item-right__number">16kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Percent Body Fat </p>
+                        <p class="item-right__number">37%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmapafter1.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">After</p>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Body Weight </div>
+                        <p class="item-right__number">53kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Muscle Mass </div>
+                        <p class="item-right__number">17.5kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Percent Body Fat </div>
+                        <p class="item-right__number">33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmap.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">Before</p>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Body Weight </p>
+                        <p class="item-right__number">58kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Muscle Mass </p>
+                        <p class="item-right__number">16kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Percent Body Fat </p>
+                        <p class="item-right__number">37%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmapafter1.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">After</p>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Body Weight </div>
+                        <p class="item-right__number">53kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Muscle Mass </div>
+                        <p class="item-right__number">17.5kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Percent Body Fat </div>
+                        <p class="item-right__number">33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmap.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">Before</p>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Body Weight </p>
+                        <p class="item-right__number">58kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Muscle Mass </p>
+                        <p class="item-right__number">16kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <p class="item-right__text">Percent Body Fat </p>
+                        <p class="item-right__number">37%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="secsion-result__item col-12">
+                  <div class="secsion-result__item-wrap">
+                    <div class="item-left"><img src="images/bitmapafter1.png" alt="IMG-GYM"></div>
+                    <div class="item-right">
+                      <p class="item-right__title">After</p>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Body Weight </div>
+                        <p class="item-right__number">53kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Muscle Mass </div>
+                        <p class="item-right__number">17.5kg</p>
+                      </div>
+                      <div class="item-right__item">
+                        <div class="item-right__text">Percent Body Fat </div>
+                        <p class="item-right__number">33%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="footer__wrapper">
           <div class="container">
@@ -30,7 +531,7 @@
             <div class="footer__bottom">
               <div class="footer__col">
                 <h4 class="footer__title">Contact</h4>
-                <div class="footer__wrap-info"><span class="footer__text-add">Add: 5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City</span><span class="footer__text-add">Hotline: 1900636920</span><span class="footer__text-add">Email: info@thenewgym.vn</span><img class="logo-confirm" src="../../images/confirm.png" alt=""></div>
+                <div class="footer__wrap-info"><span class="footer__text-add">Add: 5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City</span><span class="footer__text-add">Hotline: 1900636920</span><span class="footer__text-add">Email: info@thenewgym.vn</span><img class="logo-confirm" src="images/confirm.png" alt=""></div>
               </div>
               <div class="footer__col">
                 <h4 class="footer__title">About us</h4>
@@ -48,11 +549,11 @@
                   <li><a href="#">Corporate Membership</a></li>
                   <li><a href="#">Work with Us</a></li>
                   <li>
-                    <div class="footer__wrap-logo"><img class="logo-app" src="../../images/app-store.png" alt=""><img class="logo-app" src="../../images/google-play.png" alt=""></div>
+                    <div class="footer__wrap-logo"><img class="logo-app" src="images/app-store.png" alt=""><img class="logo-app" src="images/google-play.png" alt=""></div>
                   </li>
                 </ul>
               </div>
-              <div class="footer__col"><img src="../../images/phone_footer.png" alt=""></div>
+              <div class="footer__col"><img src="images/phone_footer.png" alt=""></div>
             </div>
           </div>
         </div>
@@ -60,13 +561,17 @@
           <div class="container">
             <div class="footer__copy-wrap">
               <div class="footer__copy-col"><span>&copy; Copyright 2019 by<a class="link-home" href="#">THE NEW GYM</a></span></div>
-              <div class="footer__copy-col"><img class="icon-network" src="../../images/fb.png" alt=""><img class="icon-network" src="../../images/camera.png" alt=""><img class="icon-network" src="../../images/youtube.png" alt=""></div>
-              <div class="footer__copy-col"><span>Designed and Maintained by</span><img class="logo-footer" src="../../images/logo-footer.png" alt=""></div>
+              <div class="footer__copy-col"><img class="icon-network" src="images/fb.png" alt=""><img class="icon-network" src="images/camera.png" alt=""><img class="icon-network" src="images/youtube.png" alt=""></div>
+              <div class="footer__copy-col"><span>Designed and Maintained by</span><img class="logo-footer" src="images/logo-footer.png" alt=""></div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/boostrap.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

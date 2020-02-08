@@ -1,0 +1,103 @@
+.facility {
+  position: relative;
+  background-color: $color-blue-3;
+
+  &__logo {
+    position: absolute;
+    right: 0;
+
+    @include media-breakpoint-down(xs) {
+      @include centerPosition("top");
+    }
+  }
+
+  &__title {
+    text-align: center;
+    padding-top: 73px;
+    margin-bottom: 63px;
+    text-transform: uppercase;
+
+    h3 {
+      margin-bottom: 8px;
+      color: $color-green-2;
+      font-weight: $font-weight-boldest;
+      font-size: 34px;
+      line-height: 41px;
+    }
+
+    span {
+      color: $color-white-1;
+      font-weight: $font-weight-bold;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  &__body {
+    padding-bottom: 150px;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 108px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 70px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-child(2) {
+      margin-top: 63px;
+    }
+  }
+
+  &__item {
+    flex: calc(100% / 4);
+    text-align: center;
+    cursor: pointer;
+
+    @include media-breakpoint-down(xs) {
+      flex: calc(100% / 2);
+    }
+
+    &:hover > i {
+      color: $color-orange-2;
+    }
+
+    i {
+      color: $color-green-2;
+      font-size: $font-size-bigest;
+      transition: color 200ms;
+
+      &.fa-shower {
+        transform: rotate(-9.32deg);
+      }
+
+      &.fa-wifi {
+        transform: rotateZ(45deg) translate(10px, 10px);
+      }
+
+      &.fa-dumbbell {
+        transform: rotateZ(-45deg) translate(5px, 10px);
+      }
+    }
+  }
+
+  &__last {
+    @include media-breakpoint-down(xs) {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-top: 18px;
+    color: $color-white-1;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

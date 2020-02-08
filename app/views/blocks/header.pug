@@ -1,0 +1,78 @@
+include ../components/button
+include ../blocks/mixins
+
+.header
+  .header__slider.slider
+    div.slider__item
+      +img(src="images/bg-slider.png", alt="#").slider__img
+      .slider__content
+        h3.slider__heading
+          p.slider__heading-line open 24/7
+          p.slider__heading-line 300k/ month
+          p.slider__heading-line no 
+            span.slider__heading-line--green contract
+        .slider__button-group
+          +button('slider__button slider__button--larger', 'register trail','fa fa-angle-double-right')
+          +button('slider__button', 'join now')
+    div.slider__item
+      +img(src="images/bg-slider.png", alt="#").slider__img
+    div.slider__item
+      +img(src="images/bg-slider.png", alt="#").slider__img
+    div.slider__item
+      +img(src="images/bg-slider.png", alt="#").slider__img
+    div.slider__item
+      +img(src="images/bg-slider.png", alt="#").slider__img
+    div.slider__item
+      +img(src="images/bg-slider.png", alt="#").slider__img
+  .header__nav.nav
+    .nav__switcher.container
+      button.nav__lang.active
+        span en
+      button.nav__lang
+        span vn
+    .container.nav__content
+      img.nav__logo(src='images/logo.png')
+      ul.nav__list
+        li.nav__list-item
+          +link().nav__list-link join now
+        li.nav__list-item
+          +link().nav__list-link.active find a gym
+        li.nav__list-item
+          +link().nav__list-link forgot pin
+        li.nav__list-item
+          +link().nav__list-link carrers
+        li.nav__list-item
+          +link().nav__list-link member login
+      button.nav__login
+        img.nav__icon(src='images/icon-user.png')
+        span.nav__button login
+      button.nav__menu.js-menu
+          img.nav__icon(src='images/icon-menu.png')
+  .header__menu.menu
+    button.menu__close.js-close-menu
+      i.fas.fa-times
+    ul.menu__list
+      li.menu__list-item.active
+        +link.menu__list-link home
+      li.menu__list-item
+        +link.menu__list-link Memberships options
+      li.menu__list-item
+        +link.menu__list-link Group X & Yoga Classes
+      li.menu__list-item
+        +link.menu__list-link Equipment
+      li.menu__list-item
+        +link.menu__list-link Personal Trainer
+      li.menu__list-item
+        +link.menu__list-link Help Centre
+      li.menu__list-item
+        +link.menu__list-link Term & Conditions
+      li.menu__list-item
+        +link.menu__list-link Contact Us
+      li.menu__list-item
+        +link.menu__list-link Property Information
+      li.menu__list-item
+        +link.menu__list-link Work with Us
+      li.menu__list-item
+        +link.menu__list-link Corporate Membership
+    +button('menu__join', 'join now')
+

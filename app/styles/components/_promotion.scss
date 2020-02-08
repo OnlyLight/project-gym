@@ -1,0 +1,111 @@
+.section-promotion {
+  padding: 110px 0;
+  background: url("../images/bg-promotion.png") no-repeat;
+  background-size: cover;
+
+  &__infomation {
+    color: $color-white-1;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  &__title {
+    color: $color-green-3;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 41px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+    }
+  }
+
+  &__decription {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 30px;
+    line-height: 36px;
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+    }
+  }
+
+  &__pra {
+    margin-left: 3px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__button {
+    @include size(174px, 45px);
+    padding: 13px 32px 13px 26px;
+    margin-top: 23px;
+    color: $color-white-1;
+    background: $color-orange-1;
+    border-radius: 4px;
+
+    .fa-angle-double-right {
+      margin-left: 7px;
+    }
+  }
+
+  &__adv {
+    position: relative;
+    padding: 0;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 50px;
+      margin-left: 0;
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding: 0 10px;
+    }
+  }
+
+  &__img-main {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__icon {
+    @include absolute(0, null, null, 0);
+    z-index: 1;
+
+    @include media-breakpoint-down(lg) {
+      width: 20%;
+    }
+  }
+
+  &__rectangle {
+    @include absolute(null, -19px, -22px, null);
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    margin-top: 50px;
+  }
+
+  &__next {
+    margin-left: 17px;
+  }
+
+  &__next,
+  &__prev {
+    width: 50px;
+    height: 45px;
+    color: $color-white-1;
+    background-color: transparent;
+    border: 1px solid $color-white-1;
+    transition: all 200ms;
+
+    &:hover {
+      color: $color-orange-1;
+      border: 1px solid $color-orange-1;
+    }
+  }
+}

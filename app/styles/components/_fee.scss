@@ -1,0 +1,114 @@
+.section-fee {
+  &:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__top {
+    z-index: 4;
+  }
+
+  &__monthly {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-fee {
+    font-family: "Exo 2";
+    padding: 30px 50px;
+    border-radius: 13px;
+    text-align: center;
+    background: #f2f2f2;
+    color: #858585;
+    transition: all 0.3s;
+
+    &:hover {
+      position: relative;
+      z-index: 2;
+      background: #a0cb02;
+      box-shadow: 0 0 0 10px #a0cb02;
+      color: #ffffff;
+      .card-fee__btn {
+        background: #ffffff;
+        color: #6b6b6b;
+      }
+    }
+
+    &__title {
+      margin-top: 16px;
+      margin-bottom: 0px;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__icon {
+      font-size: 18px;
+      margin-bottom: 55px;
+
+      i {
+        display: inline-block;
+        padding: 0 6px;
+      }
+    }
+
+    &__des {
+      font-style: italic;
+      margin-bottom: 28px;
+
+      &__number {
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      &__title {
+        text-align: left;
+        margin-bottom: 32px;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 19px;
+      }
+
+      &__item {
+        display: flex;
+        margin-bottom: 10px;
+        padding-bottom: 2px;
+        justify-content: space-between;
+        border-bottom: 1px dashed #858585;
+      }
+    }
+
+    &__btn {
+      width: 146px;
+      height: 45px;
+      background: #d5d4d4;
+      color: #ffffff;
+      border-radius: 4px;
+      font-weight: bold;
+      font-family: "Exo 2";
+
+      i {
+        padding: 0 4px;
+      }
+    }
+  }
+
+  &__three,
+  &__six,
+  &__twele {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}

@@ -1,0 +1,148 @@
+.secsion-result {
+  font-style: italic;
+
+  &__wrap {
+    text-align: center;
+    padding: 72px 0;
+  }
+
+  &__top {
+    margin-bottom: 19px;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #a6cf0f;
+  }
+
+  &__different {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #6b6b6b;
+  }
+
+  &__info {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #6b6b6b;
+    opacity: 0.9;
+
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__lable {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  &__value {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &__item {
+    color: #f36f31;
+
+    &:nth-child(2n) {
+      color: #00a6d9;
+    }
+  }
+
+  &__item-wrap {
+    display: flex;
+    padding: 3px;
+    border: 1px solid #a4a4a4;
+  }
+
+  .item-right {
+    padding: 18px;
+    text-align: left;
+
+    &__title {
+      margin-bottom: 16px;
+      font-weight: bold;
+      font-size: 23px;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding: 7px;
+      border-bottom: 1px dashed #979797;
+    }
+
+    &__text {
+      margin-bottom: 0;
+      padding-right: 37px;
+      max-width: 172px;
+      font-weight: normal;
+      font-size: 17px;
+      color: #6b6b6b;
+      opacity: 0.9;
+    }
+
+    &__number {
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 18px;
+      mix-blend-mode: normal;
+      opacity: 0.9;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 16px 0 0 0;
+
+    li {
+      list-style-type: none;
+    }
+
+    li button {
+      font-size: 0;
+      border: 1px solid #a1a1a1;
+      border-radius: 50px;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      margin: 0 8px;
+    }
+
+    li:hover,
+    li button:hover {
+      cursor: pointer;
+      color: #f36f31;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: orange !important;
+    }
+
+    li.slick-active button {
+      background: #f36f31 !important;
+      border-color: #f36f31;
+      @include size(14px);
+    }
+  }
+}
