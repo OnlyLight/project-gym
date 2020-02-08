@@ -169,6 +169,10 @@
     transition: all 0.3s ease-in;
     z-index: $z-index9;
 
+    @include maxWidth(767.98px) {
+      height: 100%;
+    }
+
     &.active {
       right: 0;
     }

@@ -55,4 +55,14 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $(".sidebar__slider-content").slick({
+    autoplay: true,
+    loop: true,
+    arrows: false,
+    dots: true,
+    focusOnSelect: false,
+    focusOnChange: false,
+    centerMode: false
+  });
 });

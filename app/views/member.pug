@@ -1,4 +1,5 @@
 extends layout/layout
+include blocks/mixins
 
 block vars
     -title = 'Welcome to Gulp Template workflow'
@@ -6,4 +7,67 @@ block vars
 
 block container
     include ./components/breadcrumb
-    //- include ./components/home/select
+    include ./components/banner
+    section.membership.container
+        .row
+            .col-12.col-md-12.col-lg-4.membership__sidebar.sidebar
+                ul.sidebar__list
+                    li.sidebar__list-item.active 
+                        +link().sidebar__list-link Monthly
+                    li.sidebar__list-item 
+                        +link().sidebar__list-link Fixed term
+                    li.sidebar__list-item 
+                        +link().sidebar__list-link Day pass
+                .sidebar__slider
+                    h4.sidebar__slider-heading pictures of the gym    
+                    .sidebar__slider-content
+                        img.sidebar__slider-item(src="images/sidebar-slider.png", alt="#")
+                        img.sidebar__slider-item(src="images/sidebar-slider.png", alt="#")
+                        img.sidebar__slider-item(src="images/sidebar-slider.png", alt="#")
+                        img.sidebar__slider-item(src="images/sidebar-slider.png", alt="#")
+                        img.sidebar__slider-item(src="images/sidebar-slider.png", alt="#")
+                        img.sidebar__slider-item(src="images/sidebar-slider.png", alt="#")
+            .col-12.col-md-12.col-lg-8.membership__content
+                .membership-card
+                    .membership-card__short
+                        h2.membership-card__heading 3 month
+                    .membership-card__content
+                        h4.membership-card__title Package of 3 months
+                        ul.membership-card__list
+                            li.membership-card__list-item
+                                h6.membership-card__list-title cost
+                                p.membership-card__list-price 1.900.000
+                            li.membership-card__list-item
+                                h6.membership-card__list-title No additional joining free
+                            li.membership-card__list-item
+                                h6.membership-card__list-title Convenient one time payment
+                        +button('membership-card__button', 'choose', 'fas fa-check')
+                .membership-card.membership-card--blue
+                    .membership-card__short
+                        h2.membership-card__heading 3 month
+                    .membership-card__content
+                        h4.membership-card__title Package of 3 months
+                        ul.membership-card__list
+                            li.membership-card__list-item
+                                h6.membership-card__list-title cost
+                                p.membership-card__list-price 1.900.000
+                            li.membership-card__list-item
+                                h6.membership-card__list-title No additional joining free
+                            li.membership-card__list-item
+                                h6.membership-card__list-title Convenient one time payment
+                        +button('membership-card__button', 'choose', 'fas fa-check')
+                .membership-card.membership-card--orange
+                    .membership-card__short
+                        h2.membership-card__heading 3 month
+                    .membership-card__content
+                        h4.membership-card__title Package of 3 months
+                        ul.membership-card__list
+                            li.membership-card__list-item
+                                h6.membership-card__list-title cost
+                                p.membership-card__list-price 1.900.000
+                            li.membership-card__list-item
+                                h6.membership-card__list-title No additional joining free
+                            li.membership-card__list-item
+                                h6.membership-card__list-title Convenient one time payment
+                        +button('membership-card__button', 'choose', 'fas fa-check')
+                    

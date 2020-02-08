@@ -1,5 +1,11 @@
-section.breadcrumb
-  ul.breadcrumb__list
-    i.fa.fa-home
-    li.breadcrumb__list-item home
-    li.breadcrumb__list-item.active equipment
+include ../blocks/mixins
+
+section.section-breadcrumb
+  .section-breadcrumb__mask
+  .container
+    ul.section-breadcrumb__list
+      li.section-breadcrumb__list-item
+        i.fa.fa-home.section-breadcrumb__icon
+        +link().section-breadcrumb__list-link home
+      li.section-breadcrumb__list-item.active
+        +link().section-breadcrumb__list-link equipment

@@ -1,3 +1,50 @@
-.breadcrumb {
+.section-breadcrumb {
+  @include flex(row, flex-start, flex-end);
+  position: relative;
+  height: 300px;
+  padding-bottom: 18px;
   background-image: url("../images/bg-breadcrumb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  &__mask {
+    @include position(absolute, 0, 0);
+    @include size(100%);
+    background-color: rgba($color: $color-grey-light-3, $alpha: 0.6);
+    z-index: 2;
+  }
+
+  &__icon {
+    margin-right: 4px;
+    font-size: $font-size-large;
+  }
+
+  &__list {
+    @include flex(row, null, center);
+    position: relative;
+    color: $color-white;
+    font-family: $font-base;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-style: italic;
+    z-index: 3;
+
+    &-item {
+      margin-right: 9px;
+
+      &:not(:nth-child(1)) a {
+        &:before {
+          content: "/";
+        }
+      }
+
+      &:hover a {
+        color: $color-green-1;
+      }
+
+      &.active > a {
+        color: $color-green-1;
+      }
+    }
+  }
 }

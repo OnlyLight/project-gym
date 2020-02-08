@@ -1,0 +1,10 @@
+include ./dropdown
+
+section.section-banner
+  .container
+    .section-banner__wrapper
+      h1.section-banner__heading
+        span.section-banner__heading--green Memberships options
+        span.section-banner__heading--thin Start easy with Us
+      +dropdown(['Da Nang','Quang Nam', 'Ho chi minh'], 'Choose your nearest Gym')
+        
