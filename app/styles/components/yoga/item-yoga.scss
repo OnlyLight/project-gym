@@ -1,0 +1,125 @@
+.item-yoga {
+  &__wrap {
+    display: flex;
+    margin-bottom: 32px;
+    padding: 6px;
+    border: 1px solid #ababab;
+
+    @include maxWidth(991.98px) {
+      margin-bottom: 16px;
+    }
+    @include maxWidth(575.98px) {
+      align-items: center;
+    }
+  }
+
+  &__image {
+    align-self: center;
+    margin-right: 18px;
+    @include maxWidth(575.98px) {
+      max-width: 50%;
+    }
+  }
+
+  &__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+
+    @include maxWidth(1199.98px) {
+      margin-top: 0;
+    }
+
+    @include maxWidth(991.98px) {
+      margin-top: 13px;
+    }
+
+    @include maxWidth(767.98px) {
+      margin-top: 6px;
+    }
+
+    @include maxWidth(575.98px) {
+      margin-top: 0;
+      justify-content: space-between;
+      flex: auto;
+    }
+
+    &-text {
+      @include maxWidth(575.98px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    color: #00a6d9;
+    font-size: 20px;
+    font-weight: 600;
+
+    @include maxWidth(1199.98px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    @include maxWidth(991.98px) {
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    @include maxWidth(575.98px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__decription {
+    display: flex;
+    flex: 1;
+
+    &-icon {
+      color: #a6cf0f;
+      font-size: 24px;
+
+      @include maxWidth(1199.98px) {
+        font-size: 20px;
+      }
+
+      @include maxWidth(991.98px) {
+        font-size: 24px;
+      }
+
+      @include maxWidth(767.98px) {
+        font-size: 18px;
+      }
+    }
+
+    &-para {
+      margin-left: 6px;
+      color: #6b6b6b;
+      font-size: 17px;
+      font-weight: 300;
+
+      @include maxWidth(1199.98px) {
+        font-size: 15px;
+      }
+
+      @include maxWidth(991.98px) {
+        font-size: 17px;
+      }
+      @include maxWidth(575.98px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100px;
+    height: 45px;
+    margin: auto 5px 6px auto;
+    @include maxWidth(575.98px) {
+      margin: 0;
+    }
+  }
+}

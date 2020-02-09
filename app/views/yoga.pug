@@ -1,0 +1,27 @@
+extends layout/page-orther
+include components/yoga/item-yoga
+
+block vars
+  -title = 'New Gym'
+  -bodyClass = 'home-page'
+
+block container
+  section.section-yoga
+    .container
+      //- +itemYoga("images/item-1.png", "The New Gym - Hoang Van Thu", "5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City")
+      .row
+        .col-md-12.col-lg-6
+          +itemYoga("images/item-1.png", "The New Gym - Hoang Van Thu", "5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City")
+        .col-md-12.col-lg-6
+          +itemYoga("images/item-2.png", "The New Gym - Au Co", "2st Floor, 659 Au Co, Tan Thanh Ward, Tan Phu District, HCM City")
+      .row 
+        .col-md-12.col-lg-6
+          +itemYoga("images/item-3.png", "The New Gym - Quang Trung", "2nd Floor, 168 Quang Trung, Ward 10, Go Vap District, HCM City")
+        .col-md-12.col-lg-6
+          +itemYoga("images/item-4.png", "The New Gym - Hoang Van Thu 02", "5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City")
+      .row 
+        .col-md-12.col-lg-6
+          +itemYoga("images/item-5.png", "The New Gym - Au Co 02", "2st Floor, 659 Au Co, Tan Thanh Ward, Tan Phu District, HCM City")
+        .col-md-12.col-lg-6
+          +itemYoga("images/item-6.png", "The New Gym - Quang Trung 02", "2nd Floor, 168 Quang Trung, Ward 10, Go Vap District, HCM City")
+    
