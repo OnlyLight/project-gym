@@ -1,0 +1,12 @@
+mixin dropdown(list, title)
+  .dropdown&attributes(attributes)
+    if title
+      h1.dropdown__heading= title
+    .section-select__dropdown.dropdown__content
+        p.dropdown__title.js-dropdown Please select Club
+          i.fas.fa-angle-down.dropdown__icon
+        ul.dropdown__list
+          each val in list
+            li.dropdown__item= val
+          
+        

@@ -1,0 +1,159 @@
+.slider {
+  height: 680px;
+  margin-bottom: 0 !important;
+
+  &__item {
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    @include maxWidth(991.98px) {
+      background-position-x: 25%;
+    }
+    @include maxWidth(767.98px) {
+      background-position-x: 15%;
+    }
+    @include maxWidth(575.98px) {
+      background-position-x: 18%;
+    }
+  }
+
+  &__content {
+    @include position(absolute, null, null, 148px, 55%);
+    color: $color-white;
+    font-family: $font-base;
+
+    @include maxWidth(1299.98px) {
+      left: 52%;
+    }
+    @include maxWidth(1199.98px) {
+      left: 50%;
+    }
+
+    @include maxWidth(991.98px) {
+      left: 45%;
+    }
+    @include maxWidth(767.98px) {
+      left: 15px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    font-weight: $font-weight-extra-bolder;
+    font-style: italic;
+    text-transform: uppercase;
+
+    &-line {
+      display: block;
+      text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.945367);
+      font-weight: $font-weight-extra-bolder;
+
+      @include maxWidth(991.98px) {
+        text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.945367);
+      }
+
+      &--green {
+        color: $color-green-1;
+      }
+      &:first-child {
+        font-size: 60px;
+        @include maxWidth(1199.98px) {
+          font-size: 50px;
+        }
+        @include maxWidth(991.98px) {
+          font-size: 40px;
+        }
+        @include maxWidth(575.98px) {
+          font-size: 8vw;
+        }
+      }
+
+      &:nth-child(2) {
+        font-size: 70px;
+        @include maxWidth(1299.98px) {
+          font-size: 60px;
+        }
+        @include maxWidth(991.98px) {
+          font-size: 50px;
+        }
+        @include maxWidth(575.98px) {
+          font-size: 9vw;
+        }
+      }
+
+      &:last-child {
+        font-size: 92px;
+        font-weight: $font-weight-boldest;
+        @include maxWidth(1499.98px) {
+          font-size: 82px;
+        }
+        @include maxWidth(1299.98px) {
+          font-size: 72px;
+        }
+        @include maxWidth(1199.98px) {
+          font-size: 72px;
+        }
+        @include maxWidth(991.98px) {
+          font-size: 60px;
+        }
+        @include maxWidth(575.98px) {
+          font-size: 12vw;
+        }
+      }
+    }
+  }
+
+  &__button {
+    width: 120px;
+
+    &--larger {
+      width: 190px;
+      margin-right: 14px;
+    }
+  }
+
+  &__button-group {
+    @include flex(row);
+  }
+
+  &__img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    min-width: 100%;
+  }
+
+  .slick {
+    &-list,
+    &-track {
+      height: 100%;
+    }
+
+    &-dots {
+      @include flex(row, center, center);
+      bottom: 22px;
+      height: 14px;
+      z-index: 10;
+
+      li {
+        @include size(10px);
+        background-color: transparent;
+        border: 1px solid $color-white;
+        border-radius: 50%;
+
+        button {
+          display: none;
+        }
+
+        &.slick-active {
+          @include size(14px);
+          border-color: $color-orange-1;
+          background-color: $color-orange-1;
+        }
+      }
+    }
+  }
+}

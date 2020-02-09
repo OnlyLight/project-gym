@@ -91,6 +91,25 @@ $(document).ready(function() {
     dots: true,
     focusOnSelect: false,
     focusOnChange: false,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $(".sidebar__slider-content").slick({
+    autoplay: true,
+    loop: true,
+    arrows: false,
+    dots: true,
+    focusOnSelect: false,
+    focusOnChange: false,
     centerMode: false
   });
 });

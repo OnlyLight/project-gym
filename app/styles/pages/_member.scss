@@ -1,0 +1,226 @@
+.membership {
+  padding-top: 38px;
+  font-family: $font-base;
+  text-transform: capitalize;
+  font-style: italic;
+
+  .sidebar {
+    width: 100%;
+
+    @include maxWidth(991.98px) {
+      margin-bottom: 30px;
+    }
+    &__list {
+      margin-bottom: 58px;
+
+      &-item {
+        position: relative;
+        margin-bottom: 4px;
+        height: 50px;
+        line-height: 50px;
+        background-color: $color-grey-light-4;
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &:after {
+          @include position(absolute, 0, 0);
+          content: "";
+          width: 0;
+          height: 0;
+          border-top: 26px solid $color-grey-dark-4;
+          border-left: 28px solid transparent;
+          transition: all 0.2s linear;
+        }
+
+        &:hover {
+          background-color: $color-orange-1;
+          a {
+            color: $color-white;
+          }
+        }
+
+        &:hover:after {
+          border-top: 50px solid $color-blue-3;
+          border-left: 45px solid transparent;
+        }
+
+        &.active {
+          background-color: $color-orange-1;
+          a {
+            color: $color-white;
+          }
+
+          &:after {
+            border-top: 50px solid $color-blue-3;
+            border-left: 45px solid transparent;
+          }
+        }
+      }
+
+      &-link {
+        @include size(100%);
+        display: inline-block;
+        padding: 0 21px;
+        transition: all 0.4s linear;
+        color: $color-grey-light-2;
+      }
+    }
+
+    &__slider {
+      text-align: center;
+
+      &-heading {
+        margin-bottom: 24px;
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+      }
+    }
+
+    .slick {
+      &-dots {
+        @include flex(row, center, center);
+        bottom: -38px;
+
+        li {
+          @include size(10px);
+          margin: 0 7.5px;
+          background-color: transparent;
+          border: 1px solid $color-grey-dark-5;
+          border-radius: 50%;
+
+          button {
+            display: none;
+          }
+
+          &.slick-active {
+            @include size(14px);
+            border-color: $color-orange-1;
+            background-color: $color-orange-1;
+          }
+        }
+      }
+    }
+  }
+
+  &-card {
+    @include flex(row);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    border: 1px solid $color-grey-dark-6;
+
+    @include maxWidth(575.98px) {
+      flex-direction: column;
+    }
+
+    &__short {
+      width: 282px;
+      padding: 20px;
+      height: 226px;
+      text-align: center;
+      background-color: $color-green-1;
+      margin-right: 33px;
+
+      @include maxWidth(991.98px) {
+        max-width: 250px;
+        height: 200px;
+      }
+      @include maxWidth(767.98px) {
+        margin-right: 15px;
+        max-width: 243px;
+        height: 195px;
+      }
+      @include maxWidth(575.98px) {
+        max-width: 100%;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__heading {
+      font-weight: 900;
+      font-size: 40px;
+      color: $color-white;
+      font-family: $font-secondary;
+      font-style: initial;
+      text-transform: uppercase;
+      @include maxWidth(991.98px) {
+        font-size: 30px;
+      }
+    }
+
+    &__content {
+      flex: 1;
+      padding-right: 20px;
+      font-family: $font-base;
+      font-style: italic;
+
+      @include maxWidth(991.98px) {
+        padding-right: 10px;
+      }
+      @include maxWidth(575.98px) {
+        padding-right: 0;
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+      color: $color-blue-4;
+      margin-bottom: 23px;
+      @include maxWidth(991.98px) {
+        margin-bottom: 13px;
+      }
+    }
+
+    &__list {
+      &-item {
+        @include flex(row, space-between);
+        padding-bottom: 4px;
+        margin-bottom: 16px;
+        border-bottom: 1px dashed $color-grey-light-2;
+
+        @include maxWidth(991.98px) {
+          margin-bottom: 10px;
+        }
+      }
+
+      &-title {
+        color: $color-grey-light-2;
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      &-price {
+        color: $color-green-1;
+        font-size: 20px;
+        font-weight: 600;
+
+        &:after {
+          content: "đ";
+        }
+      }
+    }
+
+    &__button {
+      width: 146px;
+      margin-left: auto;
+    }
+
+    $this: &;
+    &--blue {
+      #{$this}__short {
+        background-color: $color-blue-5;
+      }
+    }
+
+    &--orange {
+      #{$this}__short {
+        background-color: $color-orange-1;
+      }
+    }
+  }
+}
