@@ -113,4 +113,21 @@ $(document).ready(function() {
     focusOnChange: false,
     centerMode: false
   });
+
+  $(".group-panel .group-panel__content").hide();
+  $(".group-panel__toggle").click(function() {
+    $(".group-panel__toggle .icon")
+      .removeClass("plus")
+      .addClass("minus");
+    $(this)
+      .children()
+      .removeClass("minus")
+      .addClass("plus");
+    $(".group-panel .group-panel__content").slideUp();
+    $(this)
+      .parent()
+      .next()
+      .slideDown();
+    return false;
+  });
 });
