@@ -1,0 +1,14 @@
+include ../button
+
+mixin itemYoga(imgPath, title, para)
+  .item-yoga
+    .item-yoga__wrap
+      img.item-yoga__image(src=imgPath, alt="")
+      .item-yoga__info
+        div.item-yoga__info-text
+          h3.item-yoga__title= title
+          .item-yoga__decription
+            i.fas.fa-map-marker-alt.item-yoga__decription-icon
+            p.item-yoga__decription-para= para
+        +button('item-yoga__button', 'GO','fa fa-angle-double-right')
+      

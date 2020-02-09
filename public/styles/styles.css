@@ -13230,6 +13230,125 @@ footer {
   padding-left: 2px;
   padding-right: 2px; }
 
+.item-yoga__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+  padding: 6px;
+  border: 1px solid #ababab; }
+  @media only screen and (max-width: 991.98px) {
+    .item-yoga__wrap {
+      margin-bottom: 16px; } }
+  @media only screen and (max-width: 575.98px) {
+    .item-yoga__wrap {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+
+.item-yoga__image {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-right: 18px; }
+  @media only screen and (max-width: 575.98px) {
+    .item-yoga__image {
+      max-width: 50%; } }
+
+.item-yoga__info {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 13px; }
+  @media only screen and (max-width: 1199.98px) {
+    .item-yoga__info {
+      margin-top: 0; } }
+  @media only screen and (max-width: 991.98px) {
+    .item-yoga__info {
+      margin-top: 13px; } }
+  @media only screen and (max-width: 767.98px) {
+    .item-yoga__info {
+      margin-top: 6px; } }
+  @media only screen and (max-width: 575.98px) {
+    .item-yoga__info {
+      margin-top: 0;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-flex: 1;
+      -ms-flex: auto;
+      flex: auto; } }
+  @media only screen and (max-width: 575.98px) {
+    .item-yoga__info-text {
+      margin-bottom: 10px; } }
+
+.item-yoga__title {
+  margin-bottom: 14px;
+  color: #00a6d9;
+  font-size: 20px;
+  font-weight: 600; }
+  @media only screen and (max-width: 1199.98px) {
+    .item-yoga__title {
+      font-size: 18px;
+      margin-bottom: 10px; } }
+  @media only screen and (max-width: 991.98px) {
+    .item-yoga__title {
+      font-size: 20px;
+      margin-bottom: 14px; } }
+  @media only screen and (max-width: 575.98px) {
+    .item-yoga__title {
+      font-size: 16px;
+      margin-bottom: 10px; } }
+
+.item-yoga__decription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  .item-yoga__decription-icon {
+    color: #a6cf0f;
+    font-size: 24px; }
+    @media only screen and (max-width: 1199.98px) {
+      .item-yoga__decription-icon {
+        font-size: 20px; } }
+    @media only screen and (max-width: 991.98px) {
+      .item-yoga__decription-icon {
+        font-size: 24px; } }
+    @media only screen and (max-width: 767.98px) {
+      .item-yoga__decription-icon {
+        font-size: 18px; } }
+  .item-yoga__decription-para {
+    margin-left: 6px;
+    color: #6b6b6b;
+    font-size: 17px;
+    font-weight: 300; }
+    @media only screen and (max-width: 1199.98px) {
+      .item-yoga__decription-para {
+        font-size: 15px; } }
+    @media only screen and (max-width: 991.98px) {
+      .item-yoga__decription-para {
+        font-size: 17px; } }
+    @media only screen and (max-width: 575.98px) {
+      .item-yoga__decription-para {
+        font-size: 14px; } }
+
+.item-yoga__button {
+  width: 100px;
+  height: 45px;
+  margin: auto 5px 6px auto; }
+  @media only screen and (max-width: 575.98px) {
+    .item-yoga__button {
+      margin: 0; } }
+
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
