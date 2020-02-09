@@ -3,6 +3,10 @@
   font-family: $font-base;
   font-style: italic;
 
+  @include maxWidth(575.98px) {
+    width: 80%;
+  }
+
   &__heading {
     margin-bottom: 17px;
     color: $color-white;
@@ -19,13 +23,13 @@
     font-size: $font-size-large;
     font-weight: $font-weight-medium;
     text-transform: capitalize;
-    background: rgba($color: $color-blue-2, $alpha: 0.3);
+    background: rgba($color: $color-blue-1, $alpha: 0.3);
     opacity: 0.8;
     border: 1px solid $color-blue-1;
     border-radius: 4px;
 
     @include maxWidth(575.98px) {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -61,7 +65,7 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: rgba($color: $color-blue-2, $alpha: 0.7);
+    background: rgba($color: $color-blue-1, $alpha: 0.7);
     opacity: 0.8;
     border: 1px solid $color-blue-1;
     border-top: 0;
@@ -69,7 +73,7 @@
     transition: all 0.3s linear;
 
     &:hover {
-      background: rgba($color: $color-blue-2, $alpha: 1);
+      background: rgba($color: $color-blue-1, $alpha: 1);
       color: $color-white;
     }
   }

@@ -116,7 +116,6 @@
 
   &__button {
     width: 100px;
-    height: 45px;
     margin: auto 5px 6px auto;
     @include maxWidth(575.98px) {
       margin: 0;

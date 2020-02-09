@@ -107,7 +107,8 @@ section {
 body {
   line-height: 1;
   font-family: "Exo 2", sans-serif;
-  font-style: italic; }
+  font-style: italic;
+  overflow-x: hidden; }
 
 ol,
 ul {
@@ -135,8 +136,10 @@ button {
   button:focus {
     outline: 0; }
 
-a:hover {
-  text-decoration: none; }
+a {
+  color: #fff; }
+  a:hover {
+    text-decoration: none; }
 
 div,
 input:focus {

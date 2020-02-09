@@ -1,3 +1,5 @@
+include ./result
+
 .secsion-result
   .container
     .secsion-result__wrap
@@ -13,33 +15,5 @@
       .secsion-result__slide
         .secsion-result__slider-wrap.js-section-result.row
           - for (var i = 0; i < 6; i++)
-            .secsion-result__item.col-12
-              .secsion-result__item-wrap
-                .item-left
-                  img(src="images/bitmap.png", alt="IMG-GYM")
-                .item-right
-                  p.item-right__title Before
-                  .item-right__item
-                    p.item-right__text Body Weight 
-                    p.item-right__number 58kg
-                  .item-right__item
-                    p.item-right__text Muscle Mass 
-                    p.item-right__number 16kg
-                  .item-right__item
-                    p.item-right__text Percent Body Fat 
-                    p.item-right__number 37%
-            .secsion-result__item.col-12
-              .secsion-result__item-wrap
-                .item-left
-                  img(src="images/bitmapafter1.png", alt="IMG-GYM")
-                .item-right
-                  p.item-right__title After
-                  .item-right__item
-                    .item-right__text Body Weight 
-                    p.item-right__number 53kg
-                  .item-right__item
-                    .item-right__text Muscle Mass 
-                    p.item-right__number 17.5kg
-                  .item-right__item
-                    .item-right__text Percent Body Fat 
-                    p.item-right__number 33%
+            +result('images/bitmap.png', 'Before', '58kg', '16kg', '37%')
+            +result('images/bitmapafter1.png', 'After', '58kg', '16kg', '37%')

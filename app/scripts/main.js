@@ -2,20 +2,21 @@ $(document).ready(function() {
   $(".js-section-result").slick({
     slidesToShow: 2,
     slidesToScroll: 2,
+    autoplay: true,
     arrows: false,
     dots: true,
     dotsClass: "secsion-result__dots",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           dots: true
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

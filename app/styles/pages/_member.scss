@@ -1,5 +1,4 @@
 .membership {
-  padding-top: 38px;
   font-family: $font-base;
   text-transform: capitalize;
   font-style: italic;
@@ -169,7 +168,7 @@
     &__title {
       font-size: 20px;
       font-weight: $font-weight-bold;
-      color: $color-blue-4;
+      color: $color-blue-1;
       margin-bottom: 23px;
       @include maxWidth(991.98px) {
         margin-bottom: 13px;

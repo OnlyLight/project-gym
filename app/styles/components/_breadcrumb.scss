@@ -7,6 +7,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+
   &__mask {
     @include position(absolute, 0, 0);
     @include size(100%);
