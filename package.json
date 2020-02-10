@@ -43,6 +43,7 @@
 		"del": "^3.0.0",
 		"gulp-cli": "^2.2.0",
 		"jquery": "^3.4.1",
+		"magnific-popup": "^1.1.0",
 		"slick-carousel": "^1.8.1",
 		"static-server": "^3.0.0"
 	}

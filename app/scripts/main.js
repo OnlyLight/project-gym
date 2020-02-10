@@ -93,4 +93,22 @@ $(document).ready(function() {
     focusOnChange: false,
     centerMode: false
   });
+
+  // MagnificPopup
+  $(".gallery-item").magnificPopup({
+    type: "image",
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    mainClass: "item-slide__control",
+    gallery: {
+      enabled: true,
+      tCounter: '<span class="mfp-counter"></span>'
+    },
+    zoom: {
+      enabled: true,
+
+      duration: 300,
+      easing: "ease-in-out"
+    }
+  });
 });
