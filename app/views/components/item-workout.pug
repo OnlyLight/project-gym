@@ -1,0 +1,16 @@
+mixin itemWorkout(imgPath, title, weight, mass, bodyFat)
+  .secsion-result__item.col-6
+    .secsion-result__item-wrap
+      .item-left
+        img(src="images/bitmap.png", alt="")
+      .item-right
+        p.item-right__title= title
+        .item-right__item
+          p.item-right__text Body Weight 
+          p.item-right__number= weight
+        .item-right__item
+          p.item-right__text Muscle Mass  
+          p.item-right__number= mass
+        .item-right__item
+          p.item-right__text Percent Body Fat
+          p.item-right__number= bodyFat
