@@ -1,6 +1,5 @@
 .header {
-  position: relative;
-  overflow: hidden;
+  // position: relative;
 
   .nav {
     @include position(fixed, 0, 0);
@@ -160,7 +159,7 @@
   }
 
   .menu {
-    @include position(absolute, 0, -280px);
+    @include position(fixed, 0, -280px);
     @include flex(column);
     padding: 25px 0 0;
     width: 280px;

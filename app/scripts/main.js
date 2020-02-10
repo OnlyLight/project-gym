@@ -2,20 +2,21 @@ $(document).ready(function() {
   $(".js-section-result").slick({
     slidesToShow: 2,
     slidesToScroll: 2,
+    autoplay: true,
     arrows: false,
     dots: true,
     dotsClass: "secsion-result__dots",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           dots: true
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -129,5 +130,44 @@ $(document).ready(function() {
       duration: 300,
       easing: "ease-in-out"
     }
+  });
+  $(".group-panel:not(:first-child)")
+    .children(".group-panel__content")
+    .hide();
+  $(".group-panel__toggle").click(function() {
+    $(".group-panel__toggle .icon")
+      .removeClass("plus")
+      .addClass("minus");
+    $(this)
+      .children()
+      .removeClass("minus")
+      .addClass("plus");
+    $(".group-panel .group-panel__content").slideUp("fast");
+    $(this)
+      .parent()
+      .next()
+      .slideToggle();
+    return false;
+  });
+
+  $(".slider-location").slick({
+    autoplay: true,
+    loop: true,
+    slidesToShow: 2,
+    arrows: false,
+    dots: true,
+    focusOnSelect: false,
+    focusOnChange: false,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
   });
 });

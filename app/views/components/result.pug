@@ -1,0 +1,15 @@
+mixin result(img, title, weight, mass, fat)
+  .secsion-result__item.col-12
+    .secsion-result__item-wrap
+      img.secsion-result__img(src=img, alt="IMG-GYM")
+      .secsion-result__content
+        p.secsion-result__heading=title
+        .secsion-result__list
+          p.secsion-result__text Body Weight 
+          p.secsion-result__number=weight
+        .secsion-result__list
+          p.secsion-result__text Muscle Mass 
+          p.secsion-result__number=mass
+        .secsion-result__list
+          p.secsion-result__text Percent Body Fat 
+          p.secsion-result__number=fat

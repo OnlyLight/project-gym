@@ -1,4 +1,4 @@
-include ./item-workout
+include ./result
 
 .secsion-result
   .container
@@ -15,5 +15,5 @@ include ./item-workout
       .secsion-result__slide
         .secsion-result__slider-wrap.js-section-result.row
           - for (var i = 0; i < 6; i++)
-              +itemWorkout("images/bitmap.png", "Before", "58kg", "16kg", "37%")
-              +itemWorkout("images/bitmapafter1.png", "After", "53kg", "17.5kg", "33%")
+            +result('images/bitmap.png', 'Before', '58kg', '16kg', '37%')
+            +result('images/bitmapafter1.png', 'After', '58kg', '16kg', '37%')

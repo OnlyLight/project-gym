@@ -1,3 +1,5 @@
+include ../components/button
+
 footer
   .footer__wrapper
     .container
@@ -7,9 +9,7 @@ footer
           span.footer__span GET A 10% OFF VOUCHER
         .footer__form
           input.footer__input(type="text", placeholder="Email or phone number…")
-          button.footer__button(type="submit") 
-            | SUBMIT
-            i.far.fa-paper-plane
+          +button('footer__button', 'submit', 'far fa-paper-plane')(type="submit") 
       .footer__bottom
         .footer__col
           h4.footer__title Contact

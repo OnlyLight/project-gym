@@ -1,4 +1,4 @@
-include button
+include ./button
 
 .section-quality
   .container
@@ -30,9 +30,7 @@ include button
                       p.card-fee__des__number 1.900.000đ
                     .card-fee__des__item No additional joining free
                     .card-fee__des__item Convenient one time payment
-                  button.card-fee__btn
-                    span Chose
-                    i.fa.fa-check(aria-hidden='true')
+                  +button('card-fee__btn', 'choose', 'fa fa-check')
               .section-fee__six.col-12.col-lg-4.mt-3.mt-lg-0
                 .card-fee
                   p.card-fee__title 6 month
@@ -49,9 +47,7 @@ include button
                       p.card-fee__des__number 2.100.000đ
                     .card-fee__des__item No additional joining free
                     .card-fee__des__item Convenient one time payment
-                  button.card-fee__btn
-                    span Chose
-                    i.fa.fa-check(aria-hidden='true')
+                  +button('card-fee__btn', 'choose', 'fa fa-check')
               .section-fee__twele.col-12.col-lg-4.mt-3.mt-lg-0
                 .card-fee
                   p.card-fee__title 12 month
@@ -68,9 +64,7 @@ include button
                       p.card-fee__des__number 3.600.000đ
                     .card-fee__des__item No additional joining free
                     .card-fee__des__item Convenient one time payment
-                  button.card-fee__btn
-                    span Chose
-                    i.fa.fa-check(aria-hidden='true')
+                  +button('card-fee__btn', 'choose', 'fa fa-check')
         #menu1.tab-pane.container.fade 2
         #menu2.tab-pane.container.fade 3
     .section-quality__title

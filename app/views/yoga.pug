@@ -1,4 +1,4 @@
-extends layout/page-orther
+extends layout/page-home
 include components/yoga/item-yoga
 
 block vars
@@ -6,6 +6,8 @@ block vars
   -bodyClass = 'home-page'
 
 block container
+  include ./components/breadcrumb
+  include ./components/banner
   section.section-yoga
     .container
       .row

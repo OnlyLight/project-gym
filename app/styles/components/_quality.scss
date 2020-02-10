@@ -9,7 +9,7 @@
     h3 {
       margin-top: 45px;
       margin-bottom: 34px;
-      color: $color-white-1;
+      color: $color-white;
       font-weight: 500;
       font-size: 30px;
       line-height: 36px;
@@ -48,10 +48,13 @@
       position: relative;
       margin-bottom: 35px;
       color: #fff;
+      font-size: 20px;
+      font-weight: 300;
 
       &.active {
         color: #f36f31;
         background-color: transparent;
+        font-weight: 600;
 
         &:before {
           content: "";

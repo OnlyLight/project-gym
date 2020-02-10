@@ -8,7 +8,7 @@ footer {
       padding-top: 101px;
       padding-bottom: 42px;
       margin-bottom: 22px;
-      border-bottom: 4px solid rgba($color-white-1, 0.2);
+      border-bottom: 4px solid rgba($color-white, 0.2);
 
       @include media-breakpoint-down(md) {
         padding-top: 50px;
@@ -38,7 +38,7 @@ footer {
       text-transform: uppercase;
 
       &:nth-child(1) {
-        color: $color-white-1;
+        color: $color-white;
         font-weight: $font-weight-boldest;
         font-size: $font-size-x-biger;
         line-height: 36px;
@@ -69,8 +69,8 @@ footer {
     }
 
     &__form {
+      display: flex;
       @include media-breakpoint-down(md) {
-        display: flex;
         margin-top: 20px;
       }
 
@@ -82,11 +82,11 @@ footer {
     &__input {
       @include size(368px, 45px);
       padding-left: 19px;
-      color: $color-white-1;
+      color: $color-white;
       background: rgba(0, 0, 0, 0.44);
       font-style: italic;
       opacity: 0.8;
-      border: 1px solid $color-white-1;
+      border: 1px solid $color-white;
       box-sizing: border-box;
       border-radius: 4px;
 
@@ -95,27 +95,18 @@ footer {
       }
 
       &::placeholder {
-        color: $color-white-1;
+        color: $color-white;
       }
     }
 
     &__button {
-      @include size(155px, 45px);
+      width: 155px;
       margin-left: 12px;
-      color: $color-white-1;
-      background: $color-orange-1;
-      font-style: italic;
-      border: 0;
-      border-radius: 4px;
 
       @include media-breakpoint-down(sm) {
         width: 100%;
         margin-top: 10px;
         margin-left: 0;
-      }
-
-      i {
-        margin-left: 8px;
       }
     }
 
@@ -158,7 +149,7 @@ footer {
       display: inline-block;
       width: 391px;
       margin-bottom: 14px;
-      color: $color-white-1;
+      color: $color-white;
       line-height: 25px;
 
       @include media-breakpoint-down(md) {
@@ -186,7 +177,7 @@ footer {
       }
 
       a {
-        color: $color-white-1;
+        color: $color-white;
       }
     }
 
@@ -210,7 +201,7 @@ footer {
     }
 
     &__copy-col {
-      color: $color-white-1;
+      color: $color-white;
 
       @include media-breakpoint-down(xs) {
         margin-bottom: 5px;
@@ -228,7 +219,7 @@ footer {
 
       .link-home {
         margin-left: 5px;
-        color: $color-blue-2;
+        color: $color-blue-1;
 
         &:hover {
           opacity: 0.9;
