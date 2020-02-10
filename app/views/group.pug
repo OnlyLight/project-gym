@@ -1,5 +1,6 @@
 extends layout/page-home
 include components/button
+include components/yoga/item-yoga
 
 block vars
   -title = 'New Gym'
@@ -10,20 +11,21 @@ block container
   include ./components/banner
   .container
     .section-group
-      ul.nav.nav-pills
-        each val in ['monday', 'tuesday', 'wednesday','thursday', 'friday', 'saturday', 'sunday']
-          if(val === 'monday')
-            li.nav-item
-              a.nav-link.active(data-toggle='pill' href=`#${val}`)= val
-          else
-            li.nav-item
-              a.nav-link(data-toggle='pill' href=`#${val}`)= val
+      div.section-group__scroll
+        ul.nav.nav-pills
+          each val in ['monday', 'tuesday', 'wednesday','thursday', 'friday', 'saturday', 'sunday']
+            if(val === 'monday')
+              li.nav-item
+                a.nav-link.active(data-toggle='pill' href=`#${val}`)= val
+            else
+              li.nav-item
+                a.nav-link(data-toggle='pill' href=`#${val}`)= val
       .tab-content
         #monday.tab-pane.active
           .group-panel
             .group-panel__heading 
               .group-panel__time 06:30
-              .group-panel__name basic yoga
+              h3.group-panel__name basic yoga
               .group-panel__desc 
                 i.far.fa-clock.group-panel__desc-icon
                 .group-panel__desc-text 60 minutes practice time
@@ -38,7 +40,7 @@ block container
           .group-panel.group-panel--red
             .group-panel__heading 
               .group-panel__time 17:45
-              .group-panel__name new pump
+              h3.group-panel__name new pump
               .group-panel__desc 
                 i.far.fa-clock.group-panel__desc-icon
                 .group-panel__desc-text 60 minutes practice time
@@ -53,7 +55,7 @@ block container
           .group-panel.group-panel--grey
             .group-panel__heading 
               .group-panel__time 19:00
-              .group-panel__name basic yoga
+              h3.group-panel__name basic yoga
               .group-panel__desc 
                 i.far.fa-clock.group-panel__desc-icon
                 .group-panel__desc-text 30 minutes practice time
@@ -68,7 +70,7 @@ block container
           .group-panel.group-panel--blue
             .group-panel__heading 
               .group-panel__time 20:00
-              .group-panel__name HIIT
+              h3.group-panel__name HIIT
               .group-panel__desc 
                 i.far.fa-clock.group-panel__desc-icon
                 .group-panel__desc-text 60 minutes practice time
@@ -84,7 +86,7 @@ block container
           .group-panel
             .group-panel__heading 
               .group-panel__time 06:30
-              .group-panel__name basic yoga
+              h3.group-panel__name basic yoga
               .group-panel__desc 
                 i.far.fa-clock.group-panel__desc-icon
                 .group-panel__desc-text 60 minutes practice time
@@ -96,8 +98,371 @@ block container
             .group-panel__content
               p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
               +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
-        #wednesday.tab-pane.fade 3
-        #thursday.tab-pane.fade 4
-        #friday.tab-pane.fade 5
-        #saturday.tab-pane.fade 6
-        #sunday.tab-pane.fade 7
+          .group-panel.group-panel--red
+            .group-panel__heading 
+              .group-panel__time 17:45
+              h3.group-panel__name new pump
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--grey
+            .group-panel__heading 
+              .group-panel__time 19:00
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 30 minutes practice time
+              .group-panel__status
+                i.fas.fa-times.group-panel__status-icon
+                p.group-panel__status-text full order
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--blue
+            .group-panel__heading 
+              .group-panel__time 20:00
+              h3.group-panel__name HIIT
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+        #wednesday.tab-pane.fade
+          .group-panel
+            .group-panel__heading 
+              .group-panel__time 06:30
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--red
+            .group-panel__heading 
+              .group-panel__time 17:45
+              h3.group-panel__name new pump
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--grey
+            .group-panel__heading 
+              .group-panel__time 19:00
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 30 minutes practice time
+              .group-panel__status
+                i.fas.fa-times.group-panel__status-icon
+                p.group-panel__status-text full order
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--blue
+            .group-panel__heading 
+              .group-panel__time 20:00
+              h3.group-panel__name HIIT
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+        #thursday.tab-pane.fade
+          .group-panel
+            .group-panel__heading 
+              .group-panel__time 06:30
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--red
+            .group-panel__heading 
+              .group-panel__time 17:45
+              h3.group-panel__name new pump
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--grey
+            .group-panel__heading 
+              .group-panel__time 19:00
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 30 minutes practice time
+              .group-panel__status
+                i.fas.fa-times.group-panel__status-icon
+                p.group-panel__status-text full order
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--blue
+            .group-panel__heading 
+              .group-panel__time 20:00
+              h3.group-panel__name HIIT
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+        #friday.tab-pane.fade
+          .group-panel
+            .group-panel__heading 
+              .group-panel__time 06:30
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--red
+            .group-panel__heading 
+              .group-panel__time 17:45
+              h3.group-panel__name new pump
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--grey
+            .group-panel__heading 
+              .group-panel__time 19:00
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 30 minutes practice time
+              .group-panel__status
+                i.fas.fa-times.group-panel__status-icon
+                p.group-panel__status-text full order
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--blue
+            .group-panel__heading 
+              .group-panel__time 20:00
+              h3.group-panel__name HIIT
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+        #saturday.tab-pane.fade
+          .group-panel
+            .group-panel__heading 
+              .group-panel__time 06:30
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--red
+            .group-panel__heading 
+              .group-panel__time 17:45
+              h3.group-panel__name new pump
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--grey
+            .group-panel__heading 
+              .group-panel__time 19:00
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 30 minutes practice time
+              .group-panel__status
+                i.fas.fa-times.group-panel__status-icon
+                p.group-panel__status-text full order
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--blue
+            .group-panel__heading 
+              .group-panel__time 20:00
+              h3.group-panel__name HIIT
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+        #sunday.tab-pane.fade
+          .group-panel
+            .group-panel__heading 
+              .group-panel__time 06:30
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--red
+            .group-panel__heading 
+              .group-panel__time 17:45
+              h3.group-panel__name new pump
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--grey
+            .group-panel__heading 
+              .group-panel__time 19:00
+              h3.group-panel__name basic yoga
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 30 minutes practice time
+              .group-panel__status
+                i.fas.fa-times.group-panel__status-icon
+                p.group-panel__status-text full order
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+          .group-panel.group-panel--blue
+            .group-panel__heading 
+              .group-panel__time 20:00
+              h3.group-panel__name HIIT
+              .group-panel__desc 
+                i.far.fa-clock.group-panel__desc-icon
+                .group-panel__desc-text 60 minutes practice time
+              .group-panel__status
+                i.fas.fa-check.group-panel__status-icon
+                p.group-panel__status-text available
+              button.group-panel__toggle
+                span.minus.icon
+            .group-panel__content
+              p.group-panel__text If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. 
+              +button('group-panel__button', 'register now', 'fa fa-calendar-alt')
+    section.section-location
+      h2.section-location__heading another gym
+      .section-location__content
+        .row.flex-nowrap.slider-location
+          .col-sm-12.col-lg-6
+            +itemYoga("images/item-1.png", "The New Gym - Hoang Van Thu", "5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City")
+          .col-sm-12.col-lg-6
+            +itemYoga("images/item-2.png", "The New Gym - Au Co", "2st Floor, 659 Au Co, Tan Thanh Ward, Tan Phu District, HCM City")
+          
+          .col-sm-12.col-lg-6
+            +itemYoga("images/item-3.png", "The New Gym - Quang Trung", "2nd Floor, 168 Quang Trung, Ward 10, Go Vap District, HCM City")
+          .col-sm-12.col-lg-6
+            +itemYoga("images/item-4.png", "The New Gym - Hoang Van Thu 02", "5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City")
+          
+          .col-sm-12.col-lg-6
+            +itemYoga("images/item-5.png", "The New Gym - Au Co 02", "2st Floor, 659 Au Co, Tan Thanh Ward, Tan Phu District, HCM City")
+          .col-sm-12.col-lg-6
+            +itemYoga("images/item-6.png", "The New Gym - Quang Trung 02", "2nd Floor, 168 Quang Trung, Ward 10, Go Vap District, HCM City")

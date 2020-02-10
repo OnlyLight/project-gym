@@ -100,21 +100,23 @@
       </section>
       <div class="container">
         <div class="section-group">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#monday">monday</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#tuesday">tuesday</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#wednesday">wednesday</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#thursday">thursday</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#friday">friday</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#saturday">saturday</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#sunday">sunday</a></li>
-          </ul>
+          <div class="section-group__scroll">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#monday">monday</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#tuesday">tuesday</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#wednesday">wednesday</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#thursday">thursday</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#friday">friday</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#saturday">saturday</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#sunday">sunday</a></li>
+            </ul>
+          </div>
           <div class="tab-content">
             <div class="tab-pane active" id="monday">
               <div class="group-panel">
                 <div class="group-panel__heading"> 
                   <div class="group-panel__time">06:30</div>
-                  <div class="group-panel__name">basic yoga</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
                   <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
                     <div class="group-panel__desc-text">60 minutes practice time</div>
                   </div>
@@ -132,7 +134,7 @@
               <div class="group-panel group-panel--red">
                 <div class="group-panel__heading"> 
                   <div class="group-panel__time">17:45</div>
-                  <div class="group-panel__name">new pump</div>
+                  <h3 class="group-panel__name">new pump</h3>
                   <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
                     <div class="group-panel__desc-text">60 minutes practice time</div>
                   </div>
@@ -150,7 +152,7 @@
               <div class="group-panel group-panel--grey">
                 <div class="group-panel__heading"> 
                   <div class="group-panel__time">19:00</div>
-                  <div class="group-panel__name">basic yoga</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
                   <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
                     <div class="group-panel__desc-text">30 minutes practice time</div>
                   </div>
@@ -168,7 +170,7 @@
               <div class="group-panel group-panel--blue">
                 <div class="group-panel__heading"> 
                   <div class="group-panel__time">20:00</div>
-                  <div class="group-panel__name">HIIT</div>
+                  <h3 class="group-panel__name">HIIT</h3>
                   <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
                     <div class="group-panel__desc-text">60 minutes practice time</div>
                   </div>
@@ -188,7 +190,61 @@
               <div class="group-panel">
                 <div class="group-panel__heading"> 
                   <div class="group-panel__time">06:30</div>
-                  <div class="group-panel__name">basic yoga</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--red">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">17:45</div>
+                  <h3 class="group-panel__name">new pump</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--grey">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">19:00</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">30 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-times group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">full order</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--blue">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">20:00</div>
+                  <h3 class="group-panel__name">HIIT</h3>
                   <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
                     <div class="group-panel__desc-text">60 minutes practice time</div>
                   </div>
@@ -204,13 +260,481 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="wednesday">3</div>
-            <div class="tab-pane fade" id="thursday">4</div>
-            <div class="tab-pane fade" id="friday">5</div>
-            <div class="tab-pane fade" id="saturday">6</div>
-            <div class="tab-pane fade" id="sunday">7</div>
+            <div class="tab-pane fade" id="wednesday">
+              <div class="group-panel">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">06:30</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--red">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">17:45</div>
+                  <h3 class="group-panel__name">new pump</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--grey">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">19:00</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">30 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-times group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">full order</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--blue">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">20:00</div>
+                  <h3 class="group-panel__name">HIIT</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="thursday">
+              <div class="group-panel">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">06:30</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--red">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">17:45</div>
+                  <h3 class="group-panel__name">new pump</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--grey">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">19:00</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">30 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-times group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">full order</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--blue">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">20:00</div>
+                  <h3 class="group-panel__name">HIIT</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="friday">
+              <div class="group-panel">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">06:30</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--red">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">17:45</div>
+                  <h3 class="group-panel__name">new pump</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--grey">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">19:00</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">30 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-times group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">full order</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--blue">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">20:00</div>
+                  <h3 class="group-panel__name">HIIT</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="saturday">
+              <div class="group-panel">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">06:30</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--red">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">17:45</div>
+                  <h3 class="group-panel__name">new pump</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--grey">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">19:00</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">30 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-times group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">full order</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--blue">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">20:00</div>
+                  <h3 class="group-panel__name">HIIT</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="sunday">
+              <div class="group-panel">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">06:30</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--red">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">17:45</div>
+                  <h3 class="group-panel__name">new pump</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--grey">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">19:00</div>
+                  <h3 class="group-panel__name">basic yoga</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">30 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-times group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">full order</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+              <div class="group-panel group-panel--blue">
+                <div class="group-panel__heading"> 
+                  <div class="group-panel__time">20:00</div>
+                  <h3 class="group-panel__name">HIIT</h3>
+                  <div class="group-panel__desc"> <i class="far fa-clock group-panel__desc-icon"></i>
+                    <div class="group-panel__desc-text">60 minutes practice time</div>
+                  </div>
+                  <div class="group-panel__status"><i class="fas fa-check group-panel__status-icon"></i>
+                    <p class="group-panel__status-text">available</p>
+                  </div>
+                  <button class="group-panel__toggle"><span class="minus icon"></span></button>
+                </div>
+                <div class="group-panel__content">
+                  <p class="group-panel__text">If pounding the treadmill or lifting weights isn’t for you, Pilates could be. It’s a sequence of stretches and strengthening postures to improve balance and flexibility and boost energy levels. It also gives you heightened body awareness, what we call your ‘mind body connection’. </p>
+                        <button class="button group-panel__button"><span class="button__text">register now</span><i class="button__icon fa fa-calendar-alt"></i>
+                        </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <section class="section-location">
+          <h2 class="section-location__heading">another gym</h2>
+          <div class="section-location__content">
+            <div class="row flex-nowrap slider-location">
+              <div class="col-sm-12 col-lg-6">
+                <div class="item-yoga">
+                  <div class="item-yoga__wrap"><img class="item-yoga__image" src="images/item-1.png" alt=""/>
+                    <div class="item-yoga__info">
+                      <div class="item-yoga__info-text">
+                        <h3 class="item-yoga__title">The New Gym - Hoang Van Thu</h3>
+                        <div class="item-yoga__decription"><i class="fas fa-map-marker-alt item-yoga__decription-icon"></i>
+                          <p class="item-yoga__decription-para">5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City</p>
+                        </div>
+                      </div>
+                            <button class="button item-yoga__button"><span class="button__text">GO</span><i class="button__icon fa fa-angle-double-right"></i>
+                            </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="item-yoga">
+                  <div class="item-yoga__wrap"><img class="item-yoga__image" src="images/item-2.png" alt=""/>
+                    <div class="item-yoga__info">
+                      <div class="item-yoga__info-text">
+                        <h3 class="item-yoga__title">The New Gym - Au Co</h3>
+                        <div class="item-yoga__decription"><i class="fas fa-map-marker-alt item-yoga__decription-icon"></i>
+                          <p class="item-yoga__decription-para">2st Floor, 659 Au Co, Tan Thanh Ward, Tan Phu District, HCM City</p>
+                        </div>
+                      </div>
+                            <button class="button item-yoga__button"><span class="button__text">GO</span><i class="button__icon fa fa-angle-double-right"></i>
+                            </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="item-yoga">
+                  <div class="item-yoga__wrap"><img class="item-yoga__image" src="images/item-3.png" alt=""/>
+                    <div class="item-yoga__info">
+                      <div class="item-yoga__info-text">
+                        <h3 class="item-yoga__title">The New Gym - Quang Trung</h3>
+                        <div class="item-yoga__decription"><i class="fas fa-map-marker-alt item-yoga__decription-icon"></i>
+                          <p class="item-yoga__decription-para">2nd Floor, 168 Quang Trung, Ward 10, Go Vap District, HCM City</p>
+                        </div>
+                      </div>
+                            <button class="button item-yoga__button"><span class="button__text">GO</span><i class="button__icon fa fa-angle-double-right"></i>
+                            </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="item-yoga">
+                  <div class="item-yoga__wrap"><img class="item-yoga__image" src="images/item-4.png" alt=""/>
+                    <div class="item-yoga__info">
+                      <div class="item-yoga__info-text">
+                        <h3 class="item-yoga__title">The New Gym - Hoang Van Thu 02</h3>
+                        <div class="item-yoga__decription"><i class="fas fa-map-marker-alt item-yoga__decription-icon"></i>
+                          <p class="item-yoga__decription-para">5th Floor, 431A Hoang Van Thu, Ward 4, Tan Binh District, HCM City</p>
+                        </div>
+                      </div>
+                            <button class="button item-yoga__button"><span class="button__text">GO</span><i class="button__icon fa fa-angle-double-right"></i>
+                            </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="item-yoga">
+                  <div class="item-yoga__wrap"><img class="item-yoga__image" src="images/item-5.png" alt=""/>
+                    <div class="item-yoga__info">
+                      <div class="item-yoga__info-text">
+                        <h3 class="item-yoga__title">The New Gym - Au Co 02</h3>
+                        <div class="item-yoga__decription"><i class="fas fa-map-marker-alt item-yoga__decription-icon"></i>
+                          <p class="item-yoga__decription-para">2st Floor, 659 Au Co, Tan Thanh Ward, Tan Phu District, HCM City</p>
+                        </div>
+                      </div>
+                            <button class="button item-yoga__button"><span class="button__text">GO</span><i class="button__icon fa fa-angle-double-right"></i>
+                            </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="item-yoga">
+                  <div class="item-yoga__wrap"><img class="item-yoga__image" src="images/item-6.png" alt=""/>
+                    <div class="item-yoga__info">
+                      <div class="item-yoga__info-text">
+                        <h3 class="item-yoga__title">The New Gym - Quang Trung 02</h3>
+                        <div class="item-yoga__decription"><i class="fas fa-map-marker-alt item-yoga__decription-icon"></i>
+                          <p class="item-yoga__decription-para">2nd Floor, 168 Quang Trung, Ward 10, Go Vap District, HCM City</p>
+                        </div>
+                      </div>
+                            <button class="button item-yoga__button"><span class="button__text">GO</span><i class="button__icon fa fa-angle-double-right"></i>
+                            </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <footer>
         <div class="footer__wrapper">
