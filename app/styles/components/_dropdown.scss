@@ -12,6 +12,10 @@
     color: $color-white;
     align-self: flex-start;
     font-size: $font-size-large;
+
+    @include maxWidth(575.98px) {
+      align-self: center;
+    }
   }
 
   &__content {

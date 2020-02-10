@@ -5,6 +5,31 @@
 }
 @font-face {
   font-family: "SF Display";
-  font-weight: 800;
+  font-weight: 800, 900;
   src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+}
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot");
+  src: url("../fonts/fontello.eot") format("embedded-opentype"),
+    url("../fonts/fontello.woff") format("woff"),
+    url("../fonts/fontello.ttf") format("truetype"),
+    url("../fonts/fontello.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -114,7 +114,9 @@ $(document).ready(function() {
     centerMode: false
   });
 
-  $(".group-panel .group-panel__content").hide();
+  $(".group-panel:not(:first-child)")
+    .children(".group-panel__content")
+    .hide();
   $(".group-panel__toggle").click(function() {
     $(".group-panel__toggle .icon")
       .removeClass("plus")
@@ -123,11 +125,32 @@ $(document).ready(function() {
       .children()
       .removeClass("minus")
       .addClass("plus");
-    $(".group-panel .group-panel__content").slideUp();
+    $(".group-panel .group-panel__content").slideUp("fast");
     $(this)
       .parent()
       .next()
-      .slideDown();
+      .slideToggle();
     return false;
+  });
+
+  $(".slider-location").slick({
+    autoplay: true,
+    loop: true,
+    slidesToShow: 2,
+    arrows: false,
+    dots: true,
+    focusOnSelect: false,
+    focusOnChange: false,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
   });
 });

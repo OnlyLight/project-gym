@@ -42,8 +42,8 @@
 
     &__title {
       margin-top: 16px;
-      margin-bottom: 0px;
-      font-family: sans-serif;
+      margin-bottom: 19px;
+      font-family: $font-secondary;
       font-style: normal;
       font-weight: 900;
       font-size: 40px;
@@ -53,12 +53,12 @@
     }
 
     &__icon {
-      font-size: 18px;
       margin-bottom: 55px;
 
       i {
+        font-size: 20px;
         display: inline-block;
-        padding: 0 6px;
+        margin: 0 6px;
       }
     }
 

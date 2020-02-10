@@ -146,6 +146,24 @@
       @include maxWidth(991.98px) {
         margin-top: 0;
       }
+
+      &-icon {
+        font-size: 41px;
+        border: 2px solid white;
+        transition: all 0.4s linear;
+
+        &:hover {
+          color: $color-orange-1;
+          border: 2px solid $color-orange-1;
+        }
+
+        @include maxWidth(991.98px) {
+          font-size: 32px;
+        }
+        @include maxWidth(575.98px) {
+          font-size: 26px;
+        }
+      }
     }
 
     &__icon {
