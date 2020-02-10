@@ -1,0 +1,27 @@
+extends layout/page-orther
+include components/equipment/control-slide
+
+block vars
+  -title = 'New Gym'
+  -bodyClass = 'home-page'
+
+block container
+  section.section-equiment
+    .container
+      .section-equiment__wrap
+        ul.nav.nav-pills
+          li.nav-item
+            a.section-quality__tab.nav-link.active(data-toggle='pill' href='#menu1') The New Gym - Hoang Van Thu
+          li.nav-item
+            a.section-quality__tab.nav-link(data-toggle='pill' href='#menu2') The New Gym - Au Co
+          li.nav-item
+            a.section-quality__tab.nav-link(data-toggle='pill' href='#menu3') The New Gym - Quang Trung
+          li.nav-item
+            a.section-quality__tab.nav-link(data-toggle='pill' href='#menu4') The New Gym - Hoang Van Thu 02
+        // Tab panes
+        .tab-content
+          #menu1.tab-pane.container.active
+            +controlSide()
+          #menu2.tab-pane.container.fade 2
+          #menu3.tab-pane.container.fade 3
+          #menu4.tab-pane.container.fade 4

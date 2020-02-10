@@ -3,6 +3,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "node_modules/magnific-popup/src/css/main.scss";
 
 @import "reset";
 
@@ -24,6 +25,9 @@
 @import "components/quality";
 @import "components/fee";
 @import "components/yoga/item-yoga";
+@import "components/equipment/item-slide";
+@import "components/equipment/control-slide";
+@import "components/personal/personal-trainer";
 
 @import "vendors/fontawesome";
 

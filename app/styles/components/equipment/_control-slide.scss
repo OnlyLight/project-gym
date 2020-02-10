@@ -1,0 +1,61 @@
+.section-equiment {
+  margin-top: 36px;
+
+  &__wrap {
+    .nav {
+      justify-content: space-between;
+
+      @include media-breakpoint-down(lg) {
+        flex-wrap: nowrap;
+      }
+
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+      }
+
+      &-item {
+        background-color: transparent;
+        color: #f36f31;
+
+        @include media-breakpoint-down(md) {
+          flex: calc(100% / 2);
+        }
+
+        @include media-breakpoint-down(xs) {
+          flex: 100%;
+        }
+      }
+
+      &-link {
+        position: relative;
+        margin-bottom: 26px;
+        color: #6b6b6b;
+        font-size: 18px;
+
+        @include media-breakpoint-down(lg) {
+          font-size: 15px;
+        }
+
+        &.active {
+          color: #f36f31;
+          background-color: transparent;
+
+          &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 90%;
+            height: 2px;
+            background-color: #f36f31;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 33px;
+  }
+}
