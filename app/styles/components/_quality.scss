@@ -50,21 +50,35 @@
       color: #fff;
       font-size: 20px;
       font-weight: 300;
+      transition: all 0.3s linear;
+      @include maxWidth(767.98px) {
+        font-size: 17px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #f36f31;
+        transform: translateX(-50%);
+        transition: all 0.3s linear;
+      }
 
       &.active {
         color: #f36f31;
         background-color: transparent;
-        font-weight: 600;
-
         &:before {
-          content: "";
-          position: absolute;
-          left: 50%;
-          bottom: 0;
           width: 70%;
-          height: 2px;
-          background-color: #f36f31;
-          transform: translateX(-50%);
+        }
+      }
+
+      &:hover {
+        color: #f36f31;
+        &::before {
+          width: 70%;
         }
       }
     }

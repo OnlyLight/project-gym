@@ -1,6 +1,5 @@
 .section-equiment {
-  margin-top: 36px;
-
+  margin-bottom: 30px;
   &__wrap {
     .nav {
       justify-content: space-between;
@@ -28,27 +27,39 @@
 
       &-link {
         position: relative;
+        display: inline-block;
         margin-bottom: 26px;
         color: #6b6b6b;
         font-size: 18px;
+        padding: 0.5rem 0;
 
         @include media-breakpoint-down(lg) {
           font-size: 15px;
         }
 
+        &:before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background-color: #f36f31;
+          transform: translateX(-50%);
+          transition: all 0.3s linear;
+        }
         &.active {
           color: #f36f31;
           background-color: transparent;
+          &::before {
+            width: 100%;
+          }
+        }
 
-          &:before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            width: 90%;
-            height: 2px;
-            background-color: #f36f31;
-            transform: translateX(-50%);
+        &:hover {
+          color: #f36f31;
+          &::before {
+            width: 100%;
           }
         }
       }

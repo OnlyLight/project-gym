@@ -1,11 +1,14 @@
-extends layout/page-orther
+extends layout/page-home
 include components/button
+include components/result
 
 block vars
   -title = 'New Gym'
   -bodyClass = 'home-page'
 
 block container
+  include ./components/breadcrumb
+  include ./components/banner
   section.section-trainer
     .container
       .section-trainer__title
@@ -17,11 +20,25 @@ block container
         .section-trainer__para-col-1
           p.section-trainer__para-second Our special designed exercises and nutrition menu will surely fit your physical condition. Along with an passionate practice, transforming your body is just a story time.
       .section-trainer__item.row
-        .section-trainer__item-image.col-lg-4.col-12
+        .section-trainer__item-image.col-lg-4.col-12.col-md-6
           img(src="images/equi-1.png", alt="")
-        .section-trainer__item-image.col-lg-4.col-12
+        .section-trainer__item-image.col-lg-4.col-12.col-md-6
           img(src="images/equi-2.png", alt="")
-        .section-trainer__item-image.col-lg-4.col-12
+        .section-trainer__item-image.col-lg-4.col-12.col-md-6
           img(src="images/equi-3.png", alt="")
       .section-trainer__contact
         +button("", "CONTACT US NOW", "fas fa-envelope")
+  section.section-customer
+    .container
+      h1.section-customer__heading Don’t take our words for it, see our customers tranformation
+      - for (var i = 0; i < 3; i++) 
+          .section-customer__top
+            .section-customer__info
+              span.section-customer__label Age:  
+              span.section-customer__value 26
+            .section-customer__info
+              span.section-customer__lable Target:  
+              span.section-customer__value  Lose Fat
+          .row
+            +result('images/bitmap.png', 'Before', '58kg', '16kg', '37%').col-lg-6.section-customer__wrap
+            +result('images/bitmapafter1.png', 'After', '58kg', '16kg', '37%').col-lg-6.section-customer__wrap

@@ -20,24 +20,35 @@
   }
 
   .card-fee {
-    font-family: "Exo 2";
+    font-family: $font-base;
     padding: 30px 50px;
     border-radius: 13px;
     text-align: center;
     background: #f2f2f2;
     color: #858585;
-    transition: all 0.3s;
+    transition: background-color 0.2s linear, box-shadow 0.3s linear;
+
+    @include maxWidth(1191.98px) {
+      padding: 30px;
+    }
+    @include maxWidth(991.98px) {
+      padding: 15px;
+    }
+    @include maxWidth(767.98px) {
+      padding: 30px;
+    }
 
     &:hover {
       position: relative;
       z-index: 2;
-      background: #a0cb02;
-      box-shadow: 0 0 0 10px #a0cb02;
+      background-color: #a0cb02;
+      box-shadow: 0 0 0 8px #a0cb02, 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
       color: #ffffff;
-      // .card-fee__btn {
-      //   background: #ffffff;
-      //   color: #6b6b6b;
-      // }
+
+      .card-fee__btn {
+        background-color: #ffffff;
+        color: #6b6b6b;
+      }
     }
 
     &__title {
@@ -47,14 +58,26 @@
       font-style: normal;
       font-weight: 900;
       font-size: 40px;
-      line-height: 48px;
+      // line-height: 48px;
       text-align: center;
       text-transform: uppercase;
+
+      @include maxWidth(991.98px) {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      @include maxWidth(767.98px) {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
     }
 
     &__icon {
       margin-bottom: 55px;
 
+      @include maxWidth(1199.98px) {
+        margin-bottom: 40px;
+      }
       i {
         font-size: 20px;
         display: inline-block;
@@ -66,14 +89,14 @@
       font-style: italic;
       margin-bottom: 28px;
 
-      &__number {
+      &-number {
         margin-bottom: 0px;
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
       }
 
-      &__title {
+      &-title {
         text-align: left;
         margin-bottom: 32px;
         font-style: italic;
@@ -81,13 +104,23 @@
         font-size: 19px;
       }
 
-      &__item {
+      &-item {
         display: flex;
         margin-bottom: 10px;
         padding-bottom: 2px;
         justify-content: space-between;
         border-bottom: 1px dashed #858585;
+      }
+
+      &-text {
         text-align: left;
+
+        @include maxWidth(991.98px) {
+          font-size: 14px;
+        }
+        @include maxWidth(767.98px) {
+          font-size: 16px;
+        }
       }
     }
 

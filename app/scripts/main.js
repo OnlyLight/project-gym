@@ -131,18 +131,17 @@ $(document).ready(function() {
       easing: "ease-in-out"
     }
   });
+
   $(".group-panel:not(:first-child)")
     .children(".group-panel__content")
     .hide();
+
+  $(".group-panel:first-child")
+    .find(".group-panel__toggle")
+    .addClass("active");
+
   $(".group-panel__toggle").click(function() {
-    $(".group-panel__toggle .icon")
-      .removeClass("plus")
-      .addClass("minus");
-    $(this)
-      .children()
-      .removeClass("minus")
-      .addClass("plus");
-    $(".group-panel .group-panel__content").slideUp("fast");
+    $(this).toggleClass("active");
     $(this)
       .parent()
       .next()
