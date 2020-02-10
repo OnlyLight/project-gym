@@ -12530,7 +12530,7 @@ img {
 
 @font-face {
   font-family: "SF Display";
-  font-weight: 800;
+  font-weight: 800, 900;
   src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf"); }
 
 @font-face {
@@ -12547,12 +12547,17 @@ img {
   speak: none;
   display: inline-block;
   text-decoration: inherit;
+<<<<<<< HEAD
   width: 1em;
   margin-right: 0.2em;
   text-align: center;
   text-transform: none;
   line-height: 1em;
   margin-left: 0.2em;
+=======
+  text-align: center;
+  text-transform: none;
+>>>>>>> task/fix-merge
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -12741,6 +12746,20 @@ img {
     @media only screen and (max-width: 991.98px) {
       .header .nav__menu {
         margin-top: 0; } }
+    .header .nav__menu-icon {
+      font-size: 41px;
+      border: 2px solid white;
+      -webkit-transition: all 0.4s linear;
+      transition: all 0.4s linear; }
+      .header .nav__menu-icon:hover {
+        color: #f36f31;
+        border: 2px solid #f36f31; }
+      @media only screen and (max-width: 991.98px) {
+        .header .nav__menu-icon {
+          font-size: 32px; } }
+      @media only screen and (max-width: 575.98px) {
+        .header .nav__menu-icon {
+          font-size: 26px; } }
   @media only screen and (max-width: 991.98px) {
     .header .nav__icon {
       width: 80%; } }
@@ -13365,7 +13384,17 @@ footer {
     -ms-flex: calc(100% / 4);
     flex: calc(100% / 4);
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
     @media (max-width: 575.98px) {
       .facility__item {
         -webkit-box-flex: calc(100% / 2);
@@ -13375,18 +13404,11 @@ footer {
       color: #ff6000; }
     .facility__item i {
       color: #a6cf0f;
-      font-size: 32px;
+      font-size: 50px;
       -webkit-transition: color 200ms;
       transition: color 200ms; }
-      .facility__item i.fa-shower {
-        -webkit-transform: rotate(-9.32deg);
-        transform: rotate(-9.32deg); }
-      .facility__item i.fa-wifi {
-        -webkit-transform: rotateZ(45deg) translate(10px, 10px);
-        transform: rotateZ(45deg) translate(10px, 10px); }
-      .facility__item i.fa-dumbbell {
-        -webkit-transform: rotateZ(-45deg) translate(5px, 10px);
-        transform: rotateZ(-45deg) translate(5px, 10px); }
+      .facility__item i.icon-plus-100 {
+        font-size: 35px; }
   @media (max-width: 575.98px) {
     .facility__last {
       margin-top: 20px; } }
@@ -13786,8 +13808,8 @@ footer {
     color: #ffffff; }
   .section-fee .card-fee__title {
     margin-top: 16px;
-    margin-bottom: 0px;
-    font-family: sans-serif;
+    margin-bottom: 19px;
+    font-family: "SF Display", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
@@ -13795,11 +13817,11 @@ footer {
     text-align: center;
     text-transform: uppercase; }
   .section-fee .card-fee__icon {
-    font-size: 18px;
     margin-bottom: 55px; }
     .section-fee .card-fee__icon i {
+      font-size: 20px;
       display: inline-block;
-      padding: 0 6px; }
+      margin: 0 6px; }
   .section-fee .card-fee__des {
     font-style: italic;
     margin-bottom: 28px; }
@@ -17678,6 +17700,19 @@ readers do not read off random characters that represent icons */
         -ms-flex-direction: column;
         flex-direction: column; } }
     .membership-card__short {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       width: 282px;
       padding: 20px;
       height: 226px;
@@ -17700,6 +17735,7 @@ readers do not read off random characters that represent icons */
           height: 150px;
           margin-bottom: 15px; } }
     .membership-card__heading {
+      margin-bottom: 19px;
       font-weight: 900;
       font-size: 40px;
       color: #fff;
@@ -17709,6 +17745,11 @@ readers do not read off random characters that represent icons */
       @media only screen and (max-width: 991.98px) {
         .membership-card__heading {
           font-size: 30px; } }
+    .membership-card__icon .icon {
+      color: #fff;
+      font-size: 20px;
+      display: inline-block;
+      margin: 0 6px; }
     .membership-card__content {
       -webkit-box-flex: 1;
       -ms-flex: 1;

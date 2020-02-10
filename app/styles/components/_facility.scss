@@ -58,6 +58,9 @@
     flex: calc(100% / 4);
     text-align: center;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     @include media-breakpoint-down(xs) {
       flex: calc(100% / 2);
@@ -69,19 +72,11 @@
 
     i {
       color: $color-green-1;
-      font-size: $font-size-bigest;
+      font-size: 50px;
       transition: color 200ms;
 
-      &.fa-shower {
-        transform: rotate(-9.32deg);
-      }
-
-      &.fa-wifi {
-        transform: rotateZ(45deg) translate(10px, 10px);
-      }
-
-      &.fa-dumbbell {
-        transform: rotateZ(-45deg) translate(5px, 10px);
+      &.icon-plus-100 {
+        font-size: 35px;
       }
     }
   }

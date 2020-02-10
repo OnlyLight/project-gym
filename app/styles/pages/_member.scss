@@ -115,6 +115,7 @@
     }
 
     &__short {
+      @include flex(column, center, center);
       width: 282px;
       padding: 20px;
       height: 226px;
@@ -140,6 +141,7 @@
     }
 
     &__heading {
+      margin-bottom: 19px;
       font-weight: 900;
       font-size: 40px;
       color: $color-white;
@@ -151,6 +153,14 @@
       }
     }
 
+    &__icon {
+      .icon {
+        color: #fff;
+        font-size: 20px;
+        display: inline-block;
+        margin: 0 6px;
+      }
+    }
     &__content {
       flex: 1;
       padding-right: 20px;
