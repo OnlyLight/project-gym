@@ -1,5 +1,6 @@
 extends layout/page-home
 include components/equipment/control-slide
+include ./components/banner
 
 block vars
   -title = 'New Gym'
@@ -7,7 +8,7 @@ block vars
 
 block container
   include ./components/breadcrumb
-  include ./components/banner
+  +banner('Equipment', 'A gym in need is a gym indeed')
   section.section-equiment
     .container
       .section-equiment__wrap

@@ -38,7 +38,6 @@
   &__title {
     display: flex;
     justify-content: space-between;
-    // opacity: 0.8;
     font-weight: $font-weight-light;
     line-height: 44px;
     padding: 0 14px;
@@ -52,6 +51,7 @@
   }
 
   &__list {
+    position: relative;
     z-index: 10;
     transition: all 0.4s ease-in-out;
     transform: translateY(-120px);
@@ -66,19 +66,20 @@
   }
 
   &__item {
+    cursor: pointer;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: rgba($color: $color-blue-1, $alpha: 0.8);
-    // opacity: 0.8;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 16px;
     border: 1px solid $color-blue-1;
     border-top: 0;
-    cursor: pointer;
+    background: rgba($color: $color-blue-3, $alpha: 0.8);
     transition: all 0.25s linear;
 
     &:hover {
       background: rgba($color: $color-orange-1, $alpha: 1);
-      color: $color-white;
     }
   }
 }

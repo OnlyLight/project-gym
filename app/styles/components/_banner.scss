@@ -53,7 +53,7 @@
       border: 1px solid $color-white;
       width: 370px;
       opacity: 1;
-      background-color: rgba($color: $color-blue-1, $alpha: 1);
+      background-color: $color-blue-1;
       @include maxWidth(991.98px) {
         width: 300px;
       }
@@ -64,17 +64,26 @@
 
     &__title {
       color: $color-white;
-    }
 
-    &__list {
-      position: relative;
-      z-index: 10;
+      @include maxWidth(767.98px) {
+        font-size: 15px;
+      }
+    }
+    &__icon {
+      @include maxWidth(767.98px) {
+        font-size: 20px;
+      }
     }
     &__item {
       background: $color-blue-3;
       opacity: 1;
       border: 1px solid $color-white;
       border-top: 0;
+
+      @include maxWidth(767.98px) {
+        font-size: 13px;
+      }
+
       &:hover {
         background: $color-orange-1;
       }

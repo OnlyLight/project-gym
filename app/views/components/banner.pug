@@ -1,10 +1,11 @@
 include ./dropdown
 
-section.section-banner
-  .container
-    .section-banner__wrapper
-      h1.section-banner__heading
-        span.section-banner__heading--green Memberships options
-        span.section-banner__heading--thin Start easy with Us
-      +dropdown(['Da Nang','Quang Nam', 'Ho chi minh'], 'Choose your nearest Gym')
+mixin banner(heading, title)
+  section.section-banner
+    .container
+      .section-banner__wrapper
+        h1.section-banner__heading
+          span.section-banner__heading--green= heading
+          span.section-banner__heading--thin=title
+        +dropdown(['The New Gym - Hoang Van Thu','The New Gym - Au Co', 'The New Gym - Quang Trung', 'The New Gym - Hoang Van Thu 02'], 'Choose your nearest Gym')
         

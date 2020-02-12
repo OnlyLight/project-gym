@@ -1,5 +1,6 @@
 extends layout/page-home
 include blocks/mixins
+include ./components/banner
 
 block vars
     -title = 'Welcome to Gulp Template workflow'
@@ -7,7 +8,7 @@ block vars
 
 block container
     include ./components/breadcrumb
-    include ./components/banner
+    +banner('Memberships options','Start easy with Us')
     section.membership.container
         .row
             .col-12.col-md-12.col-lg-4.membership__sidebar.sidebar

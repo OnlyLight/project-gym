@@ -1,5 +1,6 @@
 extends layout/page-home
 include components/yoga/item-yoga
+include ./components/banner
 
 block vars
   -title = 'New Gym'
@@ -7,7 +8,7 @@ block vars
 
 block container
   include ./components/breadcrumb
-  include ./components/banner
+  +banner('Group X & Yoga Classes','Group X & Yoga Classes at The New Gym')
   section.section-yoga
     .container
       .row

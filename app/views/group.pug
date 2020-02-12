@@ -1,6 +1,7 @@
 extends layout/page-home
 include components/button
 include components/yoga/item-yoga
+include ./components/banner
 
 block vars
   -title = 'New Gym'
@@ -8,7 +9,7 @@ block vars
 
 block container
   include ./components/breadcrumb
-  include ./components/banner
+  +banner('A gym in need is a gym indeed', 'the new gym HOANG VAN THU')
   .container
     .section-group
       div.section-group__scroll
