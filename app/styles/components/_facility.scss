@@ -25,11 +25,15 @@
       line-height: 41px;
     }
 
-    span {
+    &-secondary {
       color: $color-white;
       font-weight: 500;
       font-size: 30px;
       line-height: 36px;
+
+      @include maxWidth(767.98px) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -49,8 +53,8 @@
     display: flex;
     flex-wrap: wrap;
 
-    &:nth-child(2) {
-      margin-top: 63px;
+    &:first-child {
+      margin-bottom: 63px;
     }
   }
 
@@ -71,12 +75,20 @@
     }
 
     i {
+      margin-bottom: 18px;
       color: $color-green-1;
       font-size: 50px;
-      transition: color 200ms;
-
+      transition: color 200ms linear;
+      @include maxWidth(767.98px) {
+        font-size: 40px;
+      }
       &.icon-plus-100 {
         font-size: 35px;
+        height: 50px;
+        @include maxWidth(767.98px) {
+          font-size: 30px;
+          height: 40px;
+        }
       }
     }
   }
@@ -88,11 +100,15 @@
   }
 
   &__text {
+    flex: 1;
     display: block;
-    margin-top: 18px;
     color: $color-white;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
+
+    @include maxWidth(767.98px) {
+      font-size: 16px;
+    }
   }
 }

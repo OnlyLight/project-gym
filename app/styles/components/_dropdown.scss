@@ -27,8 +27,6 @@
     font-size: $font-size-large;
     font-weight: $font-weight-medium;
     text-transform: capitalize;
-    background: rgba($color: $color-blue-1, $alpha: 0.3);
-    opacity: 0.8;
     border: 1px solid $color-blue-1;
     border-radius: 4px;
 
@@ -40,10 +38,12 @@
   &__title {
     display: flex;
     justify-content: space-between;
+    // opacity: 0.8;
     font-weight: $font-weight-light;
     line-height: 44px;
     padding: 0 14px;
     cursor: pointer;
+    background: rgba($color: $color-blue-1, $alpha: 0.3);
   }
 
   &__icon {
@@ -52,7 +52,7 @@
   }
 
   &__list {
-    z-index: -1;
+    z-index: 10;
     transition: all 0.4s ease-in-out;
     transform: translateY(-120px);
     pointer-events: none;
@@ -69,15 +69,15 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: rgba($color: $color-blue-1, $alpha: 0.7);
-    opacity: 0.8;
+    background: rgba($color: $color-blue-1, $alpha: 0.8);
+    // opacity: 0.8;
     border: 1px solid $color-blue-1;
     border-top: 0;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: all 0.25s linear;
 
     &:hover {
-      background: rgba($color: $color-blue-1, $alpha: 1);
+      background: rgba($color: $color-orange-1, $alpha: 1);
       color: $color-white;
     }
   }

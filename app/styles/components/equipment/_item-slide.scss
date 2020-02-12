@@ -1,5 +1,10 @@
 .item-slide {
+  .gallery-item {
+    display: flex;
+  }
+
   &__img {
+    margin: 0 auto;
     transition: box-shadow 200ms;
     &:hover {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -10,20 +15,42 @@
   &__control {
     .mfp {
       &-close {
-        width: 38px;
-        height: 38px;
-        // top: calc(50% - 264px);
-        // right: calc(50% - 375px);
+        display: block;
+        @include size(36px);
         top: calc(50% - 142px);
         right: calc(50% - 175px);
-        background-color: #fff;
-        transform: translate(45px, -40px);
         color: #000;
+        text-indent: -10em;
         border-radius: 50%;
+        background-color: #fff;
+        transform-origin: center center;
+        transform: translate(40px, -40px) rotate(45deg);
 
         @include media-breakpoint-down(xs) {
+          @include size(30px);
           right: 50%;
-          transform: translate(50%, -45px);
+          transform: translate(50%, -45px) rotate(45deg);
+        }
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background-color: currentColor;
+          transform-origin: center center;
+        }
+        &:before {
+          width: 17px;
+          height: 3px;
+          transform: translate(-50%, -50%);
+        }
+
+        &:after {
+          width: 3px;
+          height: 17px;
+          transform: translate(-50%, -50%);
         }
       }
 
@@ -35,11 +62,9 @@
 
       &-arrow {
         &-left {
-          // left: calc(50% - 455px);
           left: calc(50% - 265px);
 
           @include media-breakpoint-down(xs) {
-            // display: none;
             left: 0;
           }
 
@@ -64,7 +89,6 @@
         }
 
         &-right {
-          // right: calc(50% - 484px);
           right: calc(50% - 290px);
 
           @include media-breakpoint-down(xs) {

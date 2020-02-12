@@ -44,29 +44,49 @@
 
   &__adv {
     position: relative;
-    padding: 0;
-
     @include media-breakpoint-down(sm) {
       padding: 0 15px;
       margin-top: 50px;
       margin-left: 0;
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: -19px;
-      right: -18px;
-      width: 0;
-      height: 0;
-      border-bottom: 235px solid #a6cf3a;
-      border-left: 199px solid transparent;
+      display: flex;
+      justify-content: center;
     }
   }
 
   &__img-main {
     position: relative;
     z-index: 1;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      bottom: -5%;
+      right: -4%;
+      width: 0;
+      height: 0;
+      border-bottom: 235px solid #a6cf3a;
+      border-left: 199px solid transparent;
+      z-index: -1;
+      @include media-breakpoint-down(lg) {
+        border-bottom: 197px solid #a6cf3a;
+        border-left: 165px solid transparent;
+      }
+      @include media-breakpoint-down(md) {
+        border-bottom: 147px solid #a6cf3a;
+        border-left: 123px solid transparent;
+      }
+      @include media-breakpoint-down(sm) {
+        right: -3%;
+        border-bottom: 235px solid #a6cf3a;
+        border-left: 199px solid transparent;
+      }
+
+      @include maxWidth(575.98px) {
+        bottom: -4%;
+        right: -3%;
+      }
+    }
   }
 
   &__icon {
@@ -76,17 +96,13 @@
     @include media-breakpoint-down(lg) {
       width: 20%;
     }
-
-    @include media-breakpoint-down(sm) {
-      transform: translateX(15px);
-    }
   }
 
   &__rectangle {
     @include absolute(null, -19px, -22px, null);
 
+    display: none;
     @include media-breakpoint-down(lg) {
-      display: none;
     }
   }
 
