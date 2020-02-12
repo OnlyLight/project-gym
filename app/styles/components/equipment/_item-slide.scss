@@ -22,7 +22,8 @@
         border-radius: 50%;
 
         @include media-breakpoint-down(xs) {
-          display: none;
+          right: 50%;
+          transform: translate(50%, -45px);
         }
       }
 
@@ -32,59 +33,70 @@
         outline-offset: -5px;
       }
 
-      &-arrow-left {
-        // left: calc(50% - 455px);
-        left: calc(50% - 265px);
+      &-arrow {
+        &-left {
+          // left: calc(50% - 455px);
+          left: calc(50% - 265px);
 
-        @include media-breakpoint-down(xs) {
-          display: none;
+          @include media-breakpoint-down(xs) {
+            // display: none;
+            left: 0;
+          }
+
+          &:before {
+            content: "";
+            width: 2px;
+            height: 20px;
+            background-color: #fff;
+            transform: rotateZ(45deg);
+            border: 0;
+          }
+
+          &:after {
+            content: "";
+            width: 2px;
+            height: 20px;
+            background-color: #fff;
+            transform: rotateZ(-45deg) translateX(-9px);
+            opacity: 0.7;
+            border: 0;
+          }
         }
 
-        &:before {
-          content: "";
-          width: 2px;
-          height: 20px;
-          background-color: #fff;
-          transform: rotateZ(45deg);
-          border: 0;
-        }
+        &-right {
+          // right: calc(50% - 484px);
+          right: calc(50% - 290px);
 
-        &:after {
-          content: "";
-          width: 2px;
-          height: 20px;
-          background-color: #fff;
-          transform: rotateZ(-45deg) translateX(-9px);
-          opacity: 0.7;
-          border: 0;
-        }
-      }
+          @include media-breakpoint-down(xs) {
+            right: 0;
+          }
 
-      &-arrow-right {
-        // right: calc(50% - 484px);
-        right: calc(50% - 290px);
+          &:before {
+            content: "";
+            width: 2px;
+            height: 20px;
+            background-color: #fff;
+            transform: rotateZ(-45deg);
+            border: 0;
 
-        @include media-breakpoint-down(xs) {
-          display: none;
-        }
+            @include media-breakpoint-down(xs) {
+              transform: rotateZ(45deg) translate(34px, -23px);
+            }
+          }
 
-        &:before {
-          content: "";
-          width: 2px;
-          height: 20px;
-          background-color: #fff;
-          transform: rotateZ(-45deg);
-          border: 0;
-        }
+          &:after {
+            content: "";
+            width: 2px;
+            height: 20px;
+            background-color: #fff;
+            transform: rotateZ(45deg) translate(2px, 7px);
+            opacity: 0.7;
+            border: 0;
 
-        &:after {
-          content: "";
-          width: 2px;
-          height: 20px;
-          background-color: #fff;
-          transform: rotateZ(45deg) translate(2px, 7px);
-          opacity: 0.7;
-          border: 0;
+            @include media-breakpoint-down(xs) {
+              transform: rotateZ(-45deg) translate(36px, 15px);
+            }
+          }
         }
       }
     }
