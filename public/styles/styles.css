@@ -13140,8 +13140,6 @@ footer {
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
-    background: rgba(0, 166, 217, 0.3);
-    opacity: 0.8;
     border: 1px solid #00a6d9;
     border-radius: 4px; }
     @media only screen and (max-width: 575.98px) {
@@ -13157,14 +13155,15 @@ footer {
     font-weight: 300;
     line-height: 44px;
     padding: 0 14px;
-    cursor: pointer; }
+    cursor: pointer;
+    background: rgba(0, 166, 217, 0.3); }
   .dropdown__icon {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
     font-size: 27px; }
   .dropdown__list {
-    z-index: -1;
+    z-index: 10;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     -webkit-transform: translateY(-120px);
@@ -13181,14 +13180,13 @@ footer {
     line-height: 40px;
     text-align: center;
     background: rgba(0, 166, 217, 0.7);
-    opacity: 0.8;
     border: 1px solid #00a6d9;
     border-top: 0;
     cursor: pointer;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
     .dropdown__item:hover {
-      background: #00a6d9;
+      background: #f36f31;
       color: #fff; }
 
 .section-breadcrumb {
@@ -13727,7 +13725,7 @@ footer {
   background-size: cover;
   background-blend-mode: screen;
   position: relative;
-  z-index: 10; }
+  z-index: -1; }
   .section-quality__title h3 {
     margin-top: 45px;
     margin-bottom: 34px;
@@ -18127,16 +18125,18 @@ readers do not read off random characters that represent icons */
         @media only screen and (max-width: 767.98px) {
           .section-group .group-panel__toggle .icon {
             font-size: 20px; } }
-        .section-group .group-panel__toggle .icon.icon-plus {
+        .section-group .group-panel__toggle .icon.icon-minus {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
           visibility: hidden; }
       .section-group .group-panel__toggle.active {
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
         -webkit-transform-origin: center center;
         transform-origin: center center; }
-        .section-group .group-panel__toggle.active .icon.icon-plus {
-          visibility: visible; }
         .section-group .group-panel__toggle.active .icon.icon-minus {
+          visibility: visible; }
+        .section-group .group-panel__toggle.active .icon.icon-plus {
           visibility: hidden; }
       @media only screen and (max-width: 991.98px) {
         .section-group .group-panel__toggle {

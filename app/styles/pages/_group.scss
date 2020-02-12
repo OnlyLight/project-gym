@@ -203,18 +203,19 @@
         @include maxWidth(767.98px) {
           font-size: 20px;
         }
-        &.icon-plus {
+        &.icon-minus {
+          transform: rotate(90deg);
           visibility: hidden;
         }
       }
 
       &.active {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
         transform-origin: center center;
-        .icon.icon-plus {
+        .icon.icon-minus {
           visibility: visible;
         }
-        .icon.icon-minus {
+        .icon.icon-plus {
           visibility: hidden;
         }
       }
