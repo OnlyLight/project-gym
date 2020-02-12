@@ -13266,9 +13266,7 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    padding-top: 36px; }
     @media only screen and (max-width: 576.98px) {
       .section-banner__wrapper {
         -webkit-box-pack: center;
