@@ -72,11 +72,13 @@
       <div class="header__slider slider">
         <div class="slider__item" style="background-image: url(&quot;images/bg-slider-3.png&quot;);">
           <div class="slider__content">
-            <h3 class="slider__heading">
-              <p class="slider__heading-line">open 24/7</p>
-              <p class="slider__heading-line">300k/ month</p>
-              <p class="slider__heading-line">no <span class="slider__heading-line--green">contract</span></p>
-            </h3>
+            <div class="slider__heading">
+              <div class="slider__heading-time">open 24/7</div>
+              <div class="slider__heading-price">300k/ month</div>
+              <div class="slider__heading-info">no
+                <div class="slider__heading-info--green">contract</div>
+              </div>
+            </div>
             <div class="slider__button-group">
                     <button class="button slider__button slider__button--larger"><span class="button__text">register trail</span><i class="button__icon fa fa-angle-double-right"></i>
                     </button>
@@ -118,7 +120,7 @@
               <div class="tab-pane container active" id="home">
                 <div class="section-fee">
                   <div class="section-fee__monthly row" id="js-monthly">
-                    <div class="section-fee__three col-12 col-md-4 col-lg-4">
+                    <div class="section-fee__box col-12 col-md-4 col-lg-4">
                       <div class="card-fee">
                         <h2 class="card-fee__title">3 month</h2>
                         <div class="card-fee__icon"><i class="icon icon-time">&#xe80d;</i><i class="icon icon-hand">&#xe80c;</i><i class="icon icon-wifi">&#xe80b;</i><i class="icon icon-park">&#xe80a;</i><i class="icon icon-wash">&#xe809;</i><i class="icon icon-weight">&#xe808;</i></div>
@@ -139,7 +141,7 @@
                               </button>
                       </div>
                     </div>
-                    <div class="section-fee__six col-12 mt-3 mt-md-0 col-md-4 col-lg-4 mt-lg-0">
+                    <div class="section-fee__box col-12 col-md-4 col-lg-4">
                       <div class="card-fee">
                         <h2 class="card-fee__title">6 month</h2>
                         <div class="card-fee__icon"><i class="icon icon-time">&#xe80d;</i><i class="icon icon-hand">&#xe80c;</i><i class="icon icon-wifi">&#xe80b;</i><i class="icon icon-park">&#xe80a;</i><i class="icon icon-wash">&#xe809;</i><i class="icon icon-weight">&#xe808;</i></div>
@@ -160,7 +162,7 @@
                               </button>
                       </div>
                     </div>
-                    <div class="section-fee__twele col-12 mt-3 mt-md-0 col-md-4 col-lg-4">
+                    <div class="section-fee__box col-12 col-md-4 col-lg-4">
                       <div class="card-fee">
                         <h2 class="card-fee__title">12 month</h2>
                         <div class="card-fee__icon"><i class="icon icon-time">&#xe80d;</i><i class="icon icon-hand">&#xe80c;</i><i class="icon icon-wifi">&#xe80b;</i><i class="icon icon-park">&#xe80a;</i><i class="icon icon-wash">&#xe809;</i><i class="icon icon-weight">&#xe808;</i></div>
@@ -192,7 +194,7 @@
             <h3>Range of high quality equipments</h3>
           </div>
           <div class="section-quality__slide">
-            <div class="section-quality__item">
+            <div class="section-quality__item"> 
               <div class="row">
                 <div class="col-lg-3 col-6 section-quality__item-sub">
                   <div class="section-quality__thumb"><img src="images/slide-1.png" alt=""></div>
@@ -330,236 +332,294 @@
             <div class="secsion-result__top">
               <p class="secsion-result__title">workout results</p>
               <p class="secsion-result__different">Before &amp; after</p>
-              <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">26</span></div>
-              <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value"> Lose Fat</span></div>
             </div>
             <div class="secsion-result__slide">
               <div class="secsion-result__slider-wrap js-section-result row">
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">Before</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
+                      <div class="section-result__wrap">
+                        <div class="section-result__heading">
+                          <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">25</span></div>
+                          <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value">Lose Fat</span></div>
+                        </div>
+                        <div class="container">
+                          <div class="row">
+                                  <div class="secsion-result__item col-lg-6 secsion-result__item--top">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">Before</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="secsion-result__item col-lg-6">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">After</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                           </div>
                         </div>
                       </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">After</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
+                      <div class="section-result__wrap">
+                        <div class="section-result__heading">
+                          <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">28</span></div>
+                          <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value">Lose Fat</span></div>
+                        </div>
+                        <div class="container">
+                          <div class="row">
+                                  <div class="secsion-result__item col-lg-6 secsion-result__item--top">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">Before</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="secsion-result__item col-lg-6">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">After</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                           </div>
                         </div>
                       </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">Before</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
+                      <div class="section-result__wrap">
+                        <div class="section-result__heading">
+                          <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">40</span></div>
+                          <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value">Lose Fat</span></div>
+                        </div>
+                        <div class="container">
+                          <div class="row">
+                                  <div class="secsion-result__item col-lg-6 secsion-result__item--top">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">Before</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="secsion-result__item col-lg-6">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">After</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                           </div>
                         </div>
                       </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">After</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
+                      <div class="section-result__wrap">
+                        <div class="section-result__heading">
+                          <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">25</span></div>
+                          <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value">Lose Fat</span></div>
+                        </div>
+                        <div class="container">
+                          <div class="row">
+                                  <div class="secsion-result__item col-lg-6 secsion-result__item--top">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">Before</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="secsion-result__item col-lg-6">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">After</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                           </div>
                         </div>
                       </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">Before</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
+                      <div class="section-result__wrap">
+                        <div class="section-result__heading">
+                          <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">28</span></div>
+                          <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value">Lose Fat</span></div>
+                        </div>
+                        <div class="container">
+                          <div class="row">
+                                  <div class="secsion-result__item col-lg-6 secsion-result__item--top">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">Before</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="secsion-result__item col-lg-6">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">After</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                           </div>
                         </div>
                       </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">After</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
-                          </div>
+                      <div class="section-result__wrap">
+                        <div class="section-result__heading">
+                          <div class="secsion-result__info"><span class="secsion-result__label">Age:  </span><span class="secsion-result__value">40</span></div>
+                          <div class="secsion-result__info"><span class="secsion-result__lable">Target:  </span><span class="secsion-result__value">Lose Fat</span></div>
                         </div>
-                      </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">Before</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">After</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">Before</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">After</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">Before</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="secsion-result__item col-12">
-                        <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
-                          <div class="secsion-result__content">
-                            <p class="secsion-result__heading">After</p>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Body Weight </p>
-                              <p class="secsion-result__number">58kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Muscle Mass </p>
-                              <p class="secsion-result__number">16kg</p>
-                            </div>
-                            <div class="secsion-result__list">
-                              <p class="secsion-result__text">Percent Body Fat </p>
-                              <p class="secsion-result__number">37%</p>
-                            </div>
+                        <div class="container">
+                          <div class="row">
+                                  <div class="secsion-result__item col-lg-6 secsion-result__item--top">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmap.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">Before</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="secsion-result__item col-lg-6">
+                                    <div class="secsion-result__item-wrap"><img class="secsion-result__img" src="images/bitmapafter1.png" alt="IMG-GYM">
+                                      <div class="secsion-result__content">
+                                        <p class="secsion-result__heading">After</p>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Body Weight </p>
+                                          <p class="secsion-result__number">58kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Muscle Mass </p>
+                                          <p class="secsion-result__number">16kg</p>
+                                        </div>
+                                        <div class="secsion-result__list">
+                                          <p class="secsion-result__text">Percent Body Fat </p>
+                                          <p class="secsion-result__number">37%</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                           </div>
                         </div>
                       </div>

@@ -1,0 +1,15 @@
+include ./result
+
+mixin wrapResult(age, target)
+  .section-result__wrap
+    .section-result__heading
+      .secsion-result__info
+        span.secsion-result__label Age:  
+        span.secsion-result__value=age
+      .secsion-result__info
+        span.secsion-result__lable Target:  
+        span.secsion-result__value=target
+    .container
+      .row
+        +result('images/bitmap.png', 'Before', '58kg', '16kg', '37%').secsion-result__item--top
+        +result('images/bitmapafter1.png', 'After', '58kg', '16kg', '37%')

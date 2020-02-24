@@ -60,6 +60,15 @@
   &__item {
     color: #f36f31;
 
+    &--top {
+      @include maxWidth(991.98px) {
+        margin-bottom: 30px;
+      }
+      @include maxWidth(767.98px) {
+        margin-bottom: 15px;
+      }
+    }
+
     &:nth-child(2n) {
       color: #00a6d9;
     }
