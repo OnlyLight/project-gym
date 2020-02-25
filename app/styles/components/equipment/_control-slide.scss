@@ -9,13 +9,10 @@
       &-item {
         background-color: transparent;
         color: #f36f31;
-        padding: 0;
-        width: 25%;
-        // &:nth-child(4n + 1):last-child {
-        //   flex: auto;
-        // }
+        padding: 0 15px;
+
         @include media-breakpoint-down(md) {
-          // flex: calc(100% / 2);
+          flex: calc(100% / 3);
         }
 
         @include media-breakpoint-down(xs) {
@@ -30,9 +27,15 @@
         color: #6b6b6b;
         font-size: 18px;
         padding: 0.5rem 0;
+        transition: all 0.3s linear;
 
         @include media-breakpoint-down(lg) {
           font-size: 15px;
+        }
+
+        @include media-breakpoint-down(md) {
+          margin-bottom: 5px;
+          font-size: 13px;
         }
 
         &:before {
@@ -41,7 +44,7 @@
           left: 50%;
           bottom: 0;
           width: 0;
-          height: 2px;
+          height: 3px;
           background-color: #f36f31;
           transform: translateX(-50%);
           transition: all 0.3s linear;
@@ -49,6 +52,8 @@
         &.active {
           color: #f36f31;
           background-color: transparent;
+          font-weight: 600;
+
           &::before {
             width: 100%;
           }
@@ -56,6 +61,8 @@
 
         &:hover {
           color: #f36f31;
+          font-weight: 600;
+
           &::before {
             width: 100%;
           }
