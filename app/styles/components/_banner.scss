@@ -4,7 +4,8 @@
 
   &__wrapper {
     height: 153px;
-    @include flex(row, space-between, center);
+    @include flex(row, space-between);
+    padding-top: 36px;
 
     @include maxWidth(576.98px) {
       justify-content: center;

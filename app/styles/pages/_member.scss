@@ -5,6 +5,7 @@
 
   .sidebar {
     width: 100%;
+    min-height: 564px;
 
     @include maxWidth(991.98px) {
       margin-bottom: 30px;
@@ -231,5 +232,9 @@
         background-color: $color-orange-1;
       }
     }
+  }
+
+  &__content {
+    margin-bottom: 40px;
   }
 }

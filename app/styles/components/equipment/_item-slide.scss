@@ -17,16 +17,17 @@
       &-close {
         display: block;
         @include size(36px);
-        top: calc(50% - 142px);
-        right: calc(50% - 175px);
+        // top: calc(50% - 142px);
+        // right: calc(50% - 175px);
         color: #000;
         text-indent: -10em;
         border-radius: 50%;
         background-color: #fff;
+        cursor: pointer !important;
         transform-origin: center center;
         transform: translate(40px, -40px) rotate(45deg);
 
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
           @include size(30px);
           right: 50%;
           transform: translate(50%, -45px) rotate(45deg);
@@ -61,10 +62,15 @@
       }
 
       &-arrow {
-        &-left {
-          left: calc(50% - 265px);
+        @include media-breakpoint-down(md) {
+          opacity: 1;
+        }
 
-          @include media-breakpoint-down(xs) {
+        &-left {
+          left: calc(50% - 455px);
+          // left: calc(50% - 265px);
+
+          @include media-breakpoint-down(md) {
             left: 0;
           }
 
@@ -75,6 +81,11 @@
             background-color: #fff;
             transform: rotateZ(45deg);
             border: 0;
+
+            @include media-breakpoint-down(md) {
+              left: 0;
+              width: 3px;
+            }
           }
 
           &:after {
@@ -85,13 +96,19 @@
             transform: rotateZ(-45deg) translateX(-9px);
             opacity: 0.7;
             border: 0;
+
+            @include media-breakpoint-down(md) {
+              left: 0;
+              width: 3px;
+            }
           }
         }
 
         &-right {
-          right: calc(50% - 290px);
+          right: calc(50% - 484px);
+          // right: calc(50% - 290px);
 
-          @include media-breakpoint-down(xs) {
+          @include media-breakpoint-down(md) {
             right: 0;
           }
 
@@ -103,8 +120,9 @@
             transform: rotateZ(-45deg);
             border: 0;
 
-            @include media-breakpoint-down(xs) {
-              transform: rotateZ(45deg) translate(34px, -23px);
+            @include media-breakpoint-down(md) {
+              left: 30px;
+              width: 3px;
             }
           }
 
@@ -117,8 +135,9 @@
             opacity: 0.7;
             border: 0;
 
-            @include media-breakpoint-down(xs) {
-              transform: rotateZ(-45deg) translate(36px, 15px);
+            @include media-breakpoint-down(md) {
+              left: 30px;
+              width: 3px;
             }
           }
         }

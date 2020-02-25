@@ -46,62 +46,65 @@
     font-style: italic;
     text-transform: uppercase;
 
-    &-line {
-      display: block;
+    &-time {
+      font-size: 60px;
+      font-weight: $font-weight-extra-bolder;
+      text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.945367);
+
+      @include maxWidth(1199.98px) {
+        font-size: 50px;
+      }
+      @include maxWidth(991.98px) {
+        font-size: 40px;
+        text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.945367);
+      }
+      @include maxWidth(575.98px) {
+        font-size: 8vw;
+      }
+    }
+
+    &-price {
+      font-size: 70px;
       text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.945367);
       font-weight: $font-weight-extra-bolder;
 
+      @include maxWidth(1299.98px) {
+        font-size: 60px;
+      }
       @include maxWidth(991.98px) {
+        font-size: 50px;
         text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.945367);
       }
+      @include maxWidth(575.98px) {
+        font-size: 9vw;
+      }
+    }
+
+    &-info {
+      text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.945367);
+      font-size: 92px;
+      font-weight: $font-weight-boldest;
 
       &--green {
+        display: inline-block;
         color: $color-green-1;
       }
-      &:first-child {
+
+      @include maxWidth(1499.98px) {
+        font-size: 82px;
+      }
+      @include maxWidth(1299.98px) {
+        font-size: 72px;
+      }
+      @include maxWidth(1199.98px) {
+        font-size: 72px;
+      }
+      @include maxWidth(991.98px) {
+        text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.945367);
         font-size: 60px;
-        @include maxWidth(1199.98px) {
-          font-size: 50px;
-        }
-        @include maxWidth(991.98px) {
-          font-size: 40px;
-        }
-        @include maxWidth(575.98px) {
-          font-size: 8vw;
-        }
       }
-
-      &:nth-child(2) {
-        font-size: 70px;
-        @include maxWidth(1299.98px) {
-          font-size: 60px;
-        }
-        @include maxWidth(991.98px) {
-          font-size: 50px;
-        }
-        @include maxWidth(575.98px) {
-          font-size: 9vw;
-        }
-      }
-
-      &:last-child {
-        font-size: 92px;
-        font-weight: $font-weight-boldest;
-        @include maxWidth(1499.98px) {
-          font-size: 82px;
-        }
-        @include maxWidth(1299.98px) {
-          font-size: 72px;
-        }
-        @include maxWidth(1199.98px) {
-          font-size: 72px;
-        }
-        @include maxWidth(991.98px) {
-          font-size: 60px;
-        }
-        @include maxWidth(575.98px) {
-          font-size: 12vw;
-        }
+      @include maxWidth(575.98px) {
+        font-size: 12vw;
       }
     }
   }

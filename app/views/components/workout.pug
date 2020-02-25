@@ -1,4 +1,4 @@
-include ./result
+include ./wrap-result
 
 .secsion-result
   .container
@@ -6,14 +6,11 @@ include ./result
       .secsion-result__top
         p.secsion-result__title workout results
         p.secsion-result__different Before &amp; after
-        .secsion-result__info
-          span.secsion-result__label Age:  
-          span.secsion-result__value 26
-        .secsion-result__info
-          span.secsion-result__lable Target:  
-          span.secsion-result__value  Lose Fat
       .secsion-result__slide
         .secsion-result__slider-wrap.js-section-result.row
-          - for (var i = 0; i < 6; i++)
-            +result('images/bitmap.png', 'Before', '58kg', '16kg', '37%')
-            +result('images/bitmapafter1.png', 'After', '58kg', '16kg', '37%')
+          +wrapResult(25, 'Lose Fat')
+          +wrapResult(28, 'Lose Fat')
+          +wrapResult(40, 'Lose Fat')
+          +wrapResult(25, 'Lose Fat')
+          +wrapResult(28, 'Lose Fat')
+          +wrapResult(40, 'Lose Fat')

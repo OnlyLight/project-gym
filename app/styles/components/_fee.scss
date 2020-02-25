@@ -19,6 +19,17 @@
     justify-content: space-between;
   }
 
+  &__box {
+    padding: 0 2px;
+
+    @include maxWidth(767.98px) {
+      margin-top: 16px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
   .card-fee {
     font-family: $font-base;
     padding: 30px 50px;
@@ -58,7 +69,6 @@
       font-style: normal;
       font-weight: 900;
       font-size: 40px;
-      // line-height: 48px;
       text-align: center;
       text-transform: uppercase;
 
@@ -129,12 +139,5 @@
       width: 146px;
       background: #d5d4d4;
     }
-  }
-
-  &__three,
-  &__six,
-  &__twele {
-    padding-left: 2px;
-    padding-right: 2px;
   }
 }
