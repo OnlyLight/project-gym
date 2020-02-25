@@ -39,7 +39,7 @@
   }
 
   &__body {
-    padding-bottom: 150px;
+    padding-bottom: 90px;
 
     @include media-breakpoint-down(md) {
       padding-bottom: 108px;
@@ -53,15 +53,12 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-
-    &:first-child {
-      margin-bottom: 63px;
-    }
   }
 
   &__item {
     position: relative;
     z-index: 1;
+    margin-bottom: 63px;
     flex: calc(100% / 4);
     text-align: center;
     display: flex;
@@ -71,6 +68,7 @@
 
     @include media-breakpoint-down(xs) {
       flex: calc(100% / 2);
+      margin-bottom: 40px;
     }
 
     &:hover > i {
@@ -100,12 +98,6 @@
           line-height: 50px;
         }
       }
-    }
-  }
-
-  &__last {
-    @include media-breakpoint-down(xs) {
-      margin-top: 20px;
     }
   }
 

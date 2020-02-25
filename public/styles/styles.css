@@ -13364,7 +13364,7 @@ footer {
         .facility__title-secondary {
           font-size: 24px; } }
   .facility__body {
-    padding-bottom: 150px; }
+    padding-bottom: 90px; }
     @media (max-width: 991.98px) {
       .facility__body {
         padding-bottom: 108px; } }
@@ -13377,11 +13377,10 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .facility__list:first-child {
-      margin-bottom: 63px; }
   .facility__item {
     position: relative;
     z-index: 1;
+    margin-bottom: 63px;
     -webkit-box-flex: calc(100% / 4);
     -ms-flex: calc(100% / 4);
     flex: calc(100% / 4);
@@ -13401,7 +13400,8 @@ footer {
       .facility__item {
         -webkit-box-flex: calc(100% / 2);
         -ms-flex: calc(100% / 2);
-        flex: calc(100% / 2); } }
+        flex: calc(100% / 2);
+        margin-bottom: 40px; } }
     .facility__item:hover > i {
       color: #ff6000;
       -webkit-transform: rotate(-15deg);
@@ -13427,9 +13427,6 @@ footer {
             font-size: 30px;
             height: 40px;
             line-height: 50px; } }
-  @media (max-width: 575.98px) {
-    .facility__last {
-      margin-top: 20px; } }
   .facility__text {
     -webkit-box-flex: 1;
     -ms-flex: 1;
